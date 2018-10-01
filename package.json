@@ -1,0 +1,20 @@
+{
+  "name": "bbc-question-time-data",
+  "version": "1.1.0",
+  "description": "Data (and scripts to fetch data) for the BBC Question Time TV show",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "json2csv": "^4.2.1",
+    "moment": "^2.22.2",
+    "node-fetch": "^2.2.0",
+    "tabletojson": "^0.9.8",
+    "yargs": "^12.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Iain Collins <me@iaincollins.com>",
+  "license": "ISC"
+}
