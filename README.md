@@ -40,11 +40,11 @@ If you install `csvkit` (e.g. `brew install csvkit`) you can use `csvcut` to sta
 
 Get number of appearences by guest:
 
-  > csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
+  > csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
 
 Get number of appearences by party (or none):
 
-  > csvcut -c 6 appearances.csv | sort | uniq -c | sort -nr
+  > csvcut -K 1 -c 6 appearances.csv | sort | uniq -c | sort -nr
   
 Get number of appearences by party by year (hacky but works):
 
@@ -52,7 +52,7 @@ Get number of appearences by party by year (hacky but works):
 
 If you want to build/update your own `appearances.csv` file, you will need Node.js. Install dependancies with `npm i` and run the script with:
 
-  > node script.js apperances > appearances.csv
+  > npm run update-data
   
 The script will continously output and exit when it is done. If it stalls without error you have probably hit rate limiting somewhere (e.g. on Wikipedia) or are just having a network problem. If it stalls, just try it again.
 

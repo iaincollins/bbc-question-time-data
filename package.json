@@ -1,6 +1,6 @@
 {
   "name": "bbc-question-time-data",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Data (and scripts to fetch data) for the BBC Question Time TV show",
   "main": "index.js",
   "dependencies": {
@@ -13,7 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-data": "node index.js appearances > appearances.csv"
   },
   "author": "Iain Collins <me@iaincollins.com>",
   "license": "ISC"

@@ -1,11 +1,11 @@
-$ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
+$ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
+  58 Kenneth Clarke,Conservative Party (UK)
   57 Shirley Williams,Labour Party (UK)
-  57 Kenneth Clarke,Conservative Party (UK)
   46 Menzies Campbell,Liberal Party (UK)
   44 Harriet Harman,Labour Party (UK)
   43 Charles Kennedy,Liberal Democrats (UK)
   38 Michael Heseltine,Conservative Party (UK)
-  37 Clare Short,Independent (politician)
+  37 Clare Short,Independent politician
   36 Paddy Ashdown,Liberal Democrats (UK)
   35 Roy Hattersley,Labour Party (UK)
   34 Simon Hughes,Liberal Democrats (UK)
@@ -238,7 +238,7 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    6 Stephen Dorrell,Conservative Party (UK)
    6 Roseanna Cunningham,Scottish National Party
    6 Rosalind Gilmore,Unknown
-   6 Rhodes Boyson,Conservative Party (United Kingdom)
+   6 Rhodes Boyson,Conservative Party (UK)
    6 Rachel Reeves,Labour Party (UK)
    6 Quentin Letts,Unknown
    6 Priti Patel,Conservative Party (UK)
@@ -294,12 +294,12 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    5 Ruth Wishart,Unknown
    5 Russell Johnston,Unknown
    5 Rodney Bickerstaffe,Unknown
-   5 Robert Kilroy-Silk,Independent (politician)
+   5 Robert Kilroy-Silk,Independent politician
    5 Rhodri Morgan,Labour Party (UK)
    5 Phil Willis,Liberal Democrats (UK)
    5 Norman Lamb,Labour Party (UK)
    5 Nick Ferrari,Unknown
-   5 Neil Hamilton (politician),UKIP
+   5 Neil Hamilton (politician),UK Independence Party
    5 Matt Hancock,Conservative Party (UK)
    5 Mary Beard (classicist),Unknown
    5 Martin McGuinness,Sinn Féin
@@ -375,7 +375,7 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    4 Merlyn Rees,Labour Party (UK)
    4 Mary Kenny,Unknown
    4 Mary Creagh,Labour Party (UK)
-   4 Martin Bell,Independent (politician)
+   4 Martin Bell,Independent politician
    4 Mark Steel,Unknown
    4 Maajid Nawaz,Unknown
    4 Lynne Featherstone,Liberal Democrats (UK)
@@ -475,7 +475,7 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Mary Archer,Unknown
    3 Mark Serwotka,Unknown
    3 Margot James,Conservative Party (UK)
-   3 Margo MacDonald,Independent (politician)
+   3 Margo MacDonald,Independent politician
    3 Maggie Clay,Unknown
    3 Madsen Pirie,Unknown
    3 Louise Christian,Unknown
@@ -525,6 +525,7 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Dennis Skinner,Labour Party (UK)
    3 Dawn Primarolo,Labour Party (UK)
    3 Dawn Butler,Labour Party (UK)
+   3 David Sheppard,Unknown
    3 David Mitchell (comedian),Unknown
    3 David Lidington,Conservative Party (UK)
    3 David Basnett,Unknown
@@ -541,7 +542,7 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Brian Souter,Unknown
    3 Brian Cox (actor),Unknown
    3 Brenda Maddox,Unknown
-   3 Brandon Lewis,Conservative Party(UK)
+   3 Brandon Lewis,Conservative Party (UK)
    3 Bianca Jagger,Unknown
    3 Becky Tinsley,Unknown
    3 Barbara Roche,Labour Party (UK)
@@ -757,7 +758,6 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Derek Hatton,Labour Party (UK)
    2 Decca Aitkenhead,Unknown
    2 Deborah Meaden,Unknown
-   2 David Sheppard,Unknown
    2 David Mundell,Unknown
    2 David McLetchie,Scottish Conservative Party
    2 David Marquand,Plaid Cymru
@@ -1081,7 +1081,7 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Miriam Karlin,Unknown
    1 Miranda Sawyer,Unknown
    1 Mike Thomas (politician),Labour Party (UK)
-   1 Mike Hancock (British politician),Independent (politician)
+   1 Mike Hancock (British politician),Independent politician
    1 Michael White (journalist),Unknown
    1 Michael Spicer,Conservative Party (UK)
    1 Michael Russell (politician),Scottish National Party
@@ -1341,7 +1341,6 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Gwynneth Flower,Unknown
    1 Gus Macdonald,Labour Party (UK)
    1 Gurbux Singh,Unknown
-   1 Guest,Party
    1 Gráinne Maguire,Unknown
    1 Grigory Karasin,Unknown
    1 Grayson Perry,Unknown
@@ -1425,7 +1424,7 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Derek Draper,Unknown
    1 Derek Dougan,Unknown
    1 Dennis Potter,Unknown
-   1 Dennis Canavan,Independent (politician)
+   1 Dennis Canavan,Independent politician
    1 Denise Searle,Unknown
    1 Declan Kearney,Sinn Féin
    1 Deborah Orr,Unknown
@@ -1434,7 +1433,6 @@ $ csvcut -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 David Young,Unknown
    1 David Yelland (journalist),Unknown
    1 David Tang,Unknown
-   1 David SheppardKenneth Clarke,Unknown
    1 David Rendel,Liberal Democrats (UK)
    1 David Puttnam,Unknown
    1 David Napley,Unknown
