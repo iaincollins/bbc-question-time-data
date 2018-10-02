@@ -21,7 +21,7 @@ The context for doing this is that the BBC have shared graphics and statistics r
 * https://twitter.com/BBCNewsPR/status/1040246958420578304
 * https://twitter.com/bbc5live/status/1045426533802942467
 * https://www.whatdotheyknow.com/request/list_of_past_bbc_question_time_p
-* https://www.whatdotheyknow.com/request/45986/response/116725/attach/html/3/RFI20101160%20final%20response.pdf.html
+* https://www.whatdotheyknow.com/request/question_time_guest_appearances
 
 ## Known Limitations
 
