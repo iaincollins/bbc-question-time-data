@@ -16,7 +16,7 @@ Pull requests to fix issues or enhance this script are welcome.
 
 ## Context 
 
-The context for doing this is that the BBC have shared graphics and statistics relating to guests have refused requests for the underlying data to support them and it's a perennial 'hot topic' amoung viewers who often express that they feel panels are biased one way or another.
+The context for doing this is that the BBC have shared graphics and statistics relating to guests have refused requests for the underlying data to support them and it's a perennial 'hot topic' among viewers who often express that they feel panels are biased one way or another.
 
 * https://twitter.com/BBCNewsPR/status/1040246958420578304
 * https://twitter.com/bbc5live/status/1045426533802942467
@@ -26,27 +26,27 @@ The context for doing this is that the BBC have shared graphics and statistics r
 ## Known Limitations
 
 * Treat output with caution, this script has no formal tests and has not been peer reviewed.
-* If the script encounters errors fetching data (e.g. rate limiting) it will gracefully fail without erroring and will assume data is just not avlaible, which may result in have incomplete data in the resulting output. 
-* Version 1.1 includes new routines for normalizing names (to correct for mispellings or inconsistencies) and is much better at getting party data but it's still imperfect and a 'best effort' approach.
+* If the script encounters errors fetching data (e.g. rate limiting) it will gracefully fail without an error and will assume data is just not available, which may result in have incomplete data in the resulting output. 
+* Version 1.1 includes new routines for normalising names (to correct for misspellings or inconsistencies) and is much better at getting party data but it's still imperfect and a 'best effort' approach.
 * Getting accurate data is hard as people switch parties, parties split up, merge, people leave/are expelled from parties and ultimately the data is entered by humans who make mistakes.
-* Party data is not exhaustive. It does not include party data for everyone (e.g. Arthur Scargill, Alex Salmond). This is because Wikipedia does not have that data in an easily useable or normalized form or because the script doesn't know how to parse that data or because "it's complicated".
+* Party data is not exhaustive. It does not include party data for everyone (e.g. Arthur Scargill, Alex Salmond). This is because Wikipedia does not have that data in an easily useable or normalised form or because the script doesn't know how to parse that data or because "it's complicated".
 * To avoid hitting rate limits on fetching data from Wikipedia the script is deliberately synchronous and so can take a few minutes to run. It caches data but only in memory on each run. This may be improved on in future.
 
 ## Usage:
 
-This repository includes an example copy of appearances.csv you can use out of the box wihtout having to do anything.
+This repository includes an example copy of appearances.csv you can use out of the box without having to do anything.
 
 If you install `csvkit` (e.g. `brew install csvkit`) you can use `csvcut` to start to explore the data.
 
-Get number of appearences by guest:
+Get number of appearances by guest:
 
   > csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
 
-Get number of appearences by party (or none):
+Get number of appearances by party (or none):
 
   > csvcut -K 1 -c 6 appearances.csv | sort | uniq -c | sort -nr
   
-Get number of appearences by party by year (hacky but works):
+Get number of appearances by party by year (hacky but works):
 
   > grep '2018-' appearances.csv | csvcut -c 6 | sort | uniq -c | sort -nr
 
@@ -54,7 +54,7 @@ If you want to build/update your own `appearances.csv` file, you will need Node.
 
   > npm run update-data
   
-The script will continously output and exit when it is done. If it stalls without error you have probably hit rate limiting somewhere (e.g. on Wikipedia) or are just having a network problem. If it stalls, just try it again.
+The script will continuously output and exit when it is done. If it stalls without error you have probably hit rate limiting somewhere (e.g. on Wikipedia) or are just having a network problem. If it stalls, just try it again.
 
 The script usually takes a couple of minutes to run. It is faster towards the end of the run as the in-memory cache is built up.
 
