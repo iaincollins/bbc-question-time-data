@@ -1,22 +1,30 @@
 # BBC Question Time Data
 
-Data (and scripts to fetch data) for the BBC Question Time TV show.
+Data - and scripts to output data - for the BBC Question Time TV show.
 
-Specifically, it returns records of each appearance by a guest, along with their Wikipedia page to uniquely identify them and - where possible - their political party affiliation (if any, if known and subject to limitations).
+This includes a record of each appearance by a guest, along with their Wikipedia entry to uniquely identify them and - where possible - it includes the political party affiliation for politicians.
+
+An outcome from this project has been to improve the on underlying data stored in Wikipedia to make the structured data it contains more useful.
 
 ## Licence
 
-The data is from Wikipedia and used under Creative Commons Attribution Share-Alike license (CC-BY-SA). The data was created by contributors to https://en.wikipedia.org/wiki/List_of_Question_Time_episodes and related pages.
+The data is extracted from Wikipedia and is licenced under Creative Commons Attribution Share-Alike license (CC-BY-SA).
 
-Feel free to use and/or modify this script or it's output.
+The data was entered by contributors to https://en.wikipedia.org/wiki/List_of_Question_Time_episodes and related pages.
 
-A credit would be nice if you find it useful.
+Feel free to use and/or modify this script or this data with appropraite credit.
 
-Pull requests to fix issues or enhance this script are welcome.
+## Contributing
+
+Reports of actionable inaccuracies with the the data and pull requests to fix issues or enhance this script are welcome.
+
+The easiest way to correct a problem may be to update the Wikipedia page for for the list of Question Time Episodes or for the guest who is listed.
+
+If the issue is specific to how this software interperates that data or if you are unsure how to correct it you can raise an issue report at https://github.com/iaincollins/bbc-question-time-data/issues, email me@iaincollins.com or tweet @iaincollins
 
 ## Context 
 
-The context for doing this is that the BBC have shared graphics and statistics relating to guests have refused requests for the underlying data to support them and it's a perennial 'hot topic' among viewers who often express that they feel panels are biased one way or another.
+The context for this project is that the BBC have shared graphics and statistics relating to guests have refused requests for the underlying data to support them and panel bias is a perennial 'hot topic' among viewers who often express that they feel panels are biased one way or another.
 
 * https://twitter.com/BBCNewsPR/status/1040246958420578304
 * https://twitter.com/bbc5live/status/1045426533802942467
@@ -25,14 +33,20 @@ The context for doing this is that the BBC have shared graphics and statistics r
 
 ## Known Limitations
 
-* Treat output with caution, this script has no formal tests and has not been peer reviewed.
-* If the script encounters errors fetching data (e.g. rate limiting) it will gracefully fail without an error and will assume data is just not available, which may result in have incomplete data in the resulting output. 
-* Version 1.1 includes new routines for normalising names (to correct for misspellings or inconsistencies) and is much better at getting party data but it's still imperfect and a 'best effort' approach.
-* Getting accurate data is hard as people switch parties, parties split up, merge, people leave/are expelled from parties and ultimately the data is entered by humans who make mistakes.
-* Party data is not exhaustive. It does not include party data for everyone (e.g. Arthur Scargill, Alex Salmond). This is because Wikipedia does not have that data in an easily useable or normalised form or because the script doesn't know how to parse that data or because "it's complicated".
-* To avoid hitting rate limits on fetching data from Wikipedia the script is deliberately synchronous and so can take a few minutes to run. It caches data but only in memory on each run. This may be improved on in future.
+* Getting accurate data is hard as people switch parties, parties split up, merge, people leave/are expelled from parties and ultimately the data is entered by humans who make mistakes. This is a 'best effort' approach.
+* Party data is not exhaustive. It does not include party data for everyone and there are instances where it may not be correct.
+* The data is crowd sourced and the code is open sourced. Contributions and corrections are welcome. If you report a specific and actionable inaccuracy it will be corrected.
+* The party data displayed here is specifically for guests who are politicians, who (for the most part) are unambiguously associated with a specific political party.
+* It does not currently reflect the political affiliation of guests who are not politicians as their alignment is not always known and harder to decern.
+* This data could be used as a starting point to catagorise political affiliation for promiment guests, but would be at risk of being highly subjective without a clear methodology and/or independant source.
 
-## Usage:
+### Technical Limitations
+
+* This script has no formal tests and has not been peer reviewed.
+* If the script encounters errors fetching data (e.g. rate limiting) it will gracefully fail without an error and will assume data is just not available, which may result in have incomplete data in the resulting output. 
+* The script is synchronous to mitigate rate limits on the Wikipedia API when not using the included cached data (which is perodically updated).
+
+## How to run the script
 
 This repository includes an example copy of appearances.csv you can use out of the box without having to do anything.
 
@@ -60,4 +74,4 @@ The script usually takes a couple of minutes to run. It is faster towards the en
 
 ## Credit
 
-Yet another terrible idea by <me@iaincollins.com> enabled by Node.js and Wikipedia and people who write nice open source software.
+Another terrible idea by <me@iaincollins.com> enabled by Node.js and Wikipedia and people who write nice open source software. Thank you to everyone who has contributed Wikipedia without which publishing data like this would not be possible.

@@ -1,7 +1,7 @@
 $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   58 Kenneth Clarke,Conservative Party (UK)
   57 Shirley Williams,Labour Party (UK)
-  46 Menzies Campbell,Liberal Party (UK)
+  46 Menzies Campbell,Liberal Democrats (UK)
   44 Harriet Harman,Labour Party (UK)
   43 Charles Kennedy,Liberal Democrats (UK)
   38 Michael Heseltine,Conservative Party (UK)
@@ -14,7 +14,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   30 Robin Cook,Labour Party (UK)
   30 Peter Hain,Liberal Party (UK)
   29 Margaret Beckett,Labour Party (UK)
-  29 Alex Salmond,Unknown
+  29 Alex Salmond,Scottish National Party
   28 Melanie Phillips,Unknown
   28 John Prescott,Labour Party (UK)
   28 Diane Abbott,Labour Party (UK)
@@ -69,7 +69,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   16 Denis Healey,Labour Party (UK)
   16 David Starkey,Unknown
   16 Chuka Umunna,Labour Party (UK)
-  16 Chris Huhne,Social Democratic Party (UK)
+  16 Chris Huhne,Liberal Democrats (UK)
   16 Alan Johnson,Labour Party (UK)
   16 "Susan Kramer, Baroness Kramer",Liberal Democrats (UK)
   16 "Sayeeda Warsi, Baroness Warsi",Conservative Party (UK)
@@ -95,12 +95,12 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   14 Cristina Odone,Unknown
   14 Chris Grayling,Conservative Party (UK)
   14 Alan Beith,Liberal Party (UK)
-  13 Mark Oaten,Social Democratic Party (UK)
+  13 Mark Oaten,Liberal Democrats (UK)
   13 Donald Dewar,Labour Party (UK)
   13 Chris Patten,Conservative Party (UK)
   13 Caroline Spelman,Conservative Party (UK)
   13 Boris Johnson,Conservative Party (UK)
-  13 Andrew Lansley,Social Democratic Party (UK)
+  13 Andrew Lansley,Liberal Democrats (UK)
   13 "Ann Taylor, Baroness Taylor of Bolton",Labour Party (UK)
   12 Paul Nuttall,UK Independence Party
   12 Michael Portillo,Unknown
@@ -132,7 +132,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   11 Douglas Murray (author),Unknown
   11 Bryan Gould,Labour Party (UK)
   11 Antonia Fraser,Unknown
-  11 Annabel Goldie,Scottish Conservative Party
+  11 Annabel Goldie,Scottish Conservatives
   11 Amanda Platell,Unknown
   11 "Jack Cunningham, Baron Cunningham of Felling",Labour Party (UK)
   10 Yasmin Alibhai-Brown,Unknown
@@ -266,7 +266,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    6 Giles Fraser,Unknown
    6 Eric Heffer,Labour Party (UK)
    6 Ed Balls,Labour and Co-operative
-   6 Douglas Carswell,Conservative Party (UK)
+   6 Douglas Carswell,UK Independence Party
    6 Dominic Raab,Conservative Party (UK)
    6 David Penhaligon,Liberal Party (UK)
    6 David Lammy,Labour Party (UK)
@@ -435,7 +435,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Trevor Phillips,Labour Party (UK)
    3 Tom Shakespeare,Unknown
    3 Tessa Munt,Liberal Democrats (UK)
-   3 Teddy Taylor,Scottish Conservative Party
+   3 Teddy Taylor,Scottish Conservatives
    3 Sue Stapely,Unknown
    3 Steve Jones (biologist),Unknown
    3 Stephen Twigg,Labour Co-operative
@@ -633,7 +633,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Nick Hewer,Unknown
    2 Nick Cohen,Unknown
    2 Nicholas Scott,Conservative Party (UK)
-   2 Nicholas Fairbairn,Scottish Conservative Party
+   2 Nicholas Fairbairn,Scottish Conservatives
    2 Neil Wallis,Unknown
    2 Neil McIntosh (public administrator),Unknown
    2 Nazir Afzal,Unknown
@@ -760,7 +760,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Decca Aitkenhead,Unknown
    2 Deborah Meaden,Unknown
    2 David Mundell,Unknown
-   2 David McLetchie,Scottish Conservative Party
+   2 David McLetchie,Scottish Conservatives
    2 David Marquand,Plaid Cymru
    2 David Jenkins (bishop),Unknown
    2 David Heathcoat-Amory,Conservative Party (UK)
@@ -900,7 +900,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Steve Cram,Unknown
    1 Stephen Tumim,Unknown
    1 Stephen Lowe (bishop of Hulme),Unknown
-   1 Stephen Kinnock,Labour Party (United Kingdom)
+   1 Stephen Kinnock,Labour Party (UK)
    1 Stephen Green,Unknown
    1 Stephen Gethins,Scottish National Party
    1 Stephen Fry,Unknown
@@ -912,7 +912,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Simon Sebag Montefiore,Unknown
    1 Simon JenkinsMichael Howard,Unknown
    1 Simon Hornby,Unknown
-   1 Simon Hart,United Kingdom Conservative Party
+   1 Simon Hart,Conservative Party (UK)
    1 Simon Hamilton,Democratic Unionist Party
    1 Simon Fanshawe,Unknown
    1 Simon Evans,Unknown

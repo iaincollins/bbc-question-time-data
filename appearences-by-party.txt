@@ -1,17 +1,16 @@
 $ csvcut -K 1 -c 6 appearances.csv | sort | uniq -c | sort -nr
-2278 Unknown
-1324 Labour Party (UK)
-1305 Conservative Party (UK)
- 445 Liberal Democrats (UK)
+2249 Unknown
+1325 Labour Party (UK)
+1300 Conservative Party (UK)
+ 533 Liberal Democrats (UK)
  111 Independent politician
- 110 Liberal Party (UK)
-  79 Scottish National Party
+ 108 Scottish National Party
+  64 UK Independence Party
+  64 Liberal Party (UK)
   61 Plaid Cymru
-  58 UK Independence Party
-  46 Social Democratic Party (UK)
+  27 Scottish Conservatives
   26 Labour Co-operative
   23 Green Party (UK)
-  18 Scottish Conservative Party
   17 Social Democratic and Labour Party
   16 Welsh Liberal Democrats
   16 Sinn Féin
@@ -21,7 +20,6 @@ $ csvcut -K 1 -c 6 appearances.csv | sort | uniq -c | sort -nr
   12 Democratic Party (United States)
   10 Welsh Labour
   10 Democratic Unionist Party
-   9 Scottish Conservatives
    9 Green Party of England and Wales
    6 Scottish Liberal Democrats
    6 Crossbencher
@@ -29,6 +27,7 @@ $ csvcut -K 1 -c 6 appearances.csv | sort | uniq -c | sort -nr
    5 Republican Party (United States)
    5 Fine Gael
    4 Welsh Conservative Party
+   4 Social Democratic Party (UK)
    4 Scottish Green Party
    4 Non-affiliated members of the House of Lords
    3 Ulster Unionist Party
@@ -42,7 +41,6 @@ $ csvcut -K 1 -c 6 appearances.csv | sort | uniq -c | sort -nr
    2 Independent (politics)
    2 Australian Labor Party
    1 Zimbabwe African National Union
-   1 United Kingdom Conservative Party
    1 Traditional Unionist Voice
    1 Solidarity–People Before Profit
    1 Socialist Party of America
@@ -50,7 +48,6 @@ $ csvcut -K 1 -c 6 appearances.csv | sort | uniq -c | sort -nr
    1 Progressive Unionist Party
    1 National Party (South Africa)
    1 Liberal Party of Australia
-   1 Labour Party (United Kingdom)
    1 Fianna Fáil
    1 Democratic Alliance (South Africa)
    1 Communist Party of Great Britain

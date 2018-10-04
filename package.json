@@ -1,6 +1,6 @@
 {
   "name": "bbc-question-time-data",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Data (and scripts to fetch data) for the BBC Question Time TV show",
   "main": "index.js",
   "dependencies": {
