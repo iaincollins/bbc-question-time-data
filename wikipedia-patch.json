@@ -1,4 +1,7 @@
 {
+  "Alan_Beith": {
+    "party": "Liberal_Democrats_(UK)"
+  },
   "Alex_Salmond": {
     "party": "Scottish_National_Party"
   },
@@ -8,13 +11,24 @@
   "Chris_Huhne": {
     "party": "Liberal_Democrats_(UK)"
   },
+  "Cyril_Smith": {
+    "@notes": "Variously LAB, LP, LD and Independent",
+    "party": "Independent_politician"
+  },
   "Douglas_Carswell": {
     "party": "UK_Independence_Party"
   },
+  "Enoch_Powell": {
+    "@notes": "While best known as a member of the Conservatives, appeared as a member of the UUP (1974–87)",
+    "party": "Ulster_Unionist_Party"
+  },  
   "Mark_Oaten": {
     "party": "Liberal_Democrats_(UK)"
   },
   "Menzies_Campbell": {
+    "party": "Liberal_Democrats_(UK)"
+  },
+  "Peter_Hain": {
     "party": "Liberal_Democrats_(UK)"
   }
 }
