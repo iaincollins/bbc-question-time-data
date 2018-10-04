@@ -50,12 +50,12 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   19 Francis Maude,Conservative Party (UK)
   18 Ian Hislop,Unknown
   18 Iain Duncan Smith,Conservative Party (UK)
+  18 Emily Thornberry,Labour Party (UK)
   18 "Jenny Tonge, Baroness Tonge",Unknown
   18 "Charlie Falconer, Baron Falconer of Thoroton",Labour Party (UK)
   17 Max Hastings,Unknown
   17 Leanne Wood,Plaid Cymru
-  17 George Galloway,Independent (politician)
-  17 Emily Thornberry,Labour Party (UK)
+  17 George Galloway,Independent politician
   17 David Owen,Labour Party (UK)
   17 Chris Bryant,Labour Party (UK)
   17 Andy Burnham,Labour Party (UK)
@@ -143,6 +143,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   10 Oliver Letwin,Conservative Party (UK)
   10 Lynda Chalker,Conservative Party (UK)
   10 Julia Goldsworthy,Liberal Democrats (UK)
+  10 Isabel Oakeshott,Unknown
   10 Edward Heath,Conservative Party (UK)
   10 David Laws,Liberal Democrats (UK)
   10 Charles Clarke,Labour Party (UK)
@@ -158,7 +159,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    9 Mehdi Hasan,Unknown
    9 Leon Brittan,Conservative Party (UK)
    9 John Swinney,Scottish National Party
-   9 Isabel Oakeshott,Unknown
    9 George Osborne,Conservative Party (UK)
    9 Des Wilson,Unknown
    9 David Trimble,Conservative Party (UK)
@@ -183,7 +183,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    8 John Denham (politician),Labour Party (UK)
    8 Jeremy Hunt,Conservative Party (UK)
    8 Jane Moore,Unknown
-   8 Jacob Rees-Mogg,Conservative Party (United Kingdom)
+   8 Jacob Rees-Mogg,Conservative Party (UK)
    8 Hilary Benn,Labour Party (UK)
    8 Enoch Powell,Conservative Party (UK)
    8 Elizabeth Truss,Conservative Party (UK)
@@ -528,6 +528,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 David Sheppard,Unknown
    3 David Mitchell (comedian),Unknown
    3 David Lidington,Conservative Party (UK)
+   3 David Gauke,Conservative Party (UK)
    3 David Basnett,Unknown
    3 David Baddiel,Unknown
    3 Conor Cruise O'Brien,Labour Party (Ireland)
@@ -763,7 +764,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 David Marquand,Plaid Cymru
    2 David Jenkins (bishop),Unknown
    2 David Heathcoat-Amory,Conservative Party (UK)
-   2 David Gauke,Conservative Party (UK)
    2 David Frum,Unknown
    2 David Evans (British politician),Unknown
    2 Darcus Howe,Unknown
