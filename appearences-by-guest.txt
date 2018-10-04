@@ -12,7 +12,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   32 Nigel Farage,UK Independence Party
   31 Tony Benn,Labour Party (UK)
   30 Robin Cook,Labour Party (UK)
-  30 Peter Hain,Liberal Party (UK)
+  30 Peter Hain,Liberal Democrats (UK)
   29 Margaret Beckett,Labour Party (UK)
   29 Alex Salmond,Scottish National Party
   28 Melanie Phillips,Unknown
@@ -94,7 +94,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   14 Janet Daley,Unknown
   14 Cristina Odone,Unknown
   14 Chris Grayling,Conservative Party (UK)
-  14 Alan Beith,Liberal Party (UK)
+  14 Alan Beith,Liberal Democrats (UK)
   13 Mark Oaten,Liberal Democrats (UK)
   13 Donald Dewar,Labour Party (UK)
   13 Chris Patten,Conservative Party (UK)
@@ -164,7 +164,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    9 David Trimble,Conservative Party (UK)
    9 David Miliband,Labour Party (UK)
    9 Dafydd Wigley,Plaid Cymru
-   9 Cyril Smith,Liberal Party (UK)
+   9 Cyril Smith,Independent politician
    9 Arthur Scargill,Unknown
    9 "Tom King, Baron King of Bridgwater",Conservative Party (UK)
    9 "Bill Rodgers, Baron Rodgers of Quarry Bank",Labour Party (UK)
@@ -185,7 +185,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    8 Jane Moore,Unknown
    8 Jacob Rees-Mogg,Conservative Party (UK)
    8 Hilary Benn,Labour Party (UK)
-   8 Enoch Powell,Conservative Party (UK)
+   8 Enoch Powell,Ulster Unionist Party
    8 Elizabeth Truss,Conservative Party (UK)
    8 Elfyn Llwyd,Plaid Cymru
    8 Danny Alexander,Liberal Democrats (UK)
@@ -253,7 +253,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    6 Michael Winner,Unknown
    6 Liz Kendall,Labour Party (UK)
    6 Kirsty Williams,Liberal Democrats (UK)
-   6 Kezia Dugdale,Labour Co-operative
+   6 Kezia Dugdale,Labour and Co-operative
    6 Julia Neuberger,Unknown
    6 John Edmonds (trade unionist),Unknown
    6 John Bercow,Conservative Party (UK)
@@ -417,7 +417,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    4 Anne Sofer,Unknown
    4 Anne Atkins,Unknown
    4 Angela Rayner,Labour Party (UK)
-   4 Alun Michael,Labour Co-operative
+   4 Alun Michael,Labour and Co-operative
    4 Adam Price,Plaid Cymru
    4 "William Whitelaw, 1st Viscount Whitelaw",Conservative Party (UK)
    4 "Tony Banks, Baron Stratford",Labour Party (UK)
@@ -438,7 +438,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Teddy Taylor,Scottish Conservatives
    3 Sue Stapely,Unknown
    3 Steve Jones (biologist),Unknown
-   3 Stephen Twigg,Labour Co-operative
+   3 Stephen Twigg,Labour and Co-operative
    3 Stephen Crabb,Welsh Conservative Party
    3 Simon Thomas (politician),Plaid Cymru
    3 Shappi Khorsandi,Unknown
@@ -471,6 +471,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Nadhim Zahawi,Conservative Party (UK)
    3 Michael Nazir-Ali,Unknown
    3 Michael Meadowcroft,Unknown
+   3 Michael Dobbs,Conservative Party (UK)
    3 Matt Forde,Unknown
    3 Mary Archer,Unknown
    3 Mark Serwotka,Unknown
@@ -628,6 +629,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 P. D. James,Unknown
    2 Owen Paterson,Conservative Party (UK)
    2 Noreena Hertz,Unknown
+   2 Nish Kumar,Unknown
    2 Nigella Lawson,Unknown
    2 Nigel Evans,Conservative Party (UK)
    2 Nick Hewer,Unknown
@@ -646,7 +648,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Michael Mates,Conservative Party (UK)
    2 Michael Mansfield,Unknown
    2 Michael Grade,Unknown
-   2 Michael Dobbs,Conservative Party (UK)
    2 Max Mosley,Unknown
    2 Mary Holland,Unknown
    2 Martin Sorrell,Unknown
@@ -661,7 +662,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Marc Roche,Unknown
    2 Maeve Sherlock,Labour Party (UK)
    2 M&C Saatchi,Unknown
-   2 Lucy Powell,Labour Co-operative
+   2 Lucy Powell,Labour and Co-operative
    2 Loyd Grossman,Unknown
    2 Lorna Fitzsimons,Labour Party (UK)
    2 Liz Saville Roberts,Plaid Cymru
@@ -690,12 +691,12 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Jonathan Freedland,Unknown
    2 Jonathan Bartley,Green Party of England and Wales
    2 Jonathan Aitken,Conservative Party (UK)
-   2 Jon Ashworth,Labour Co-operative
+   2 Jon Ashworth,Labour and Co-operative
    2 John Thorn (headmaster),Unknown
    2 John Pardoe,Liberal Party (UK)
    2 John O'Dowd,Sinn Féin
    2 John Mortimer,Unknown
-   2 John Monks,Labour Co-operative
+   2 John Monks,Labour and Co-operative
    2 John Mann (British politician),Labour Party (UK)
    2 John Alderson (police officer),Unknown
    2 Joel Edwards (Evangelical Alliance),Unknown
@@ -705,7 +706,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Jo-Anne Nadler,Unknown
    2 Jimmy Wales,Unknown
    2 Jim Murphy,Labour Party (UK)
-   2 Jim Knight,Labour Co-operative
+   2 Jim Knight,Labour and Co-operative
    2 Jess Phillips,Labour Party (UK)
    2 Jerry Springer,Democratic Party (United States)
    2 Jeremy Clarkson,Unknown
@@ -1046,7 +1047,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Norman Stone,Unknown
    1 Norman Pace,Unknown
    1 Norman Jay,Unknown
-   1 Nish Kumar,Unknown
    1 Nina Temple,Communist Party of Great Britain
    1 Nikki King,Unknown
    1 Nigel Havers,Unknown
@@ -1137,7 +1137,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Maggie Chapman,Scottish Green Party
    1 Lynn Collins,Unknown
    1 Luna Frank-Riley,Unknown
-   1 Luciana Berger,Labour Co-operative
+   1 Luciana Berger,Labour and Co-operative
    1 Louise Haigh,Labour Party (UK)
    1 Louise Cooper,Unknown
    1 Lorraine Kelly,Unknown
@@ -1227,7 +1227,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 John Butcher (British politician),Unknown
    1 John Burgh (civil servant),Unknown
    1 John Biggs-Davison,Unknown
-   1 Johann Lamont,Labour Co-operative
+   1 Johann Lamont,Labour and Co-operative
    1 Johann Hari,Unknown
    1 Johan Eliasch,Unknown
    1 Joey Barton,Unknown
@@ -1412,7 +1412,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Dom Joly,Unknown
    1 Dipak Nandy,Unknown
    1 Digby Anderson,Unknown
-   1 Dickson Mabon,Labour Co-operative
+   1 Dickson Mabon,Labour and Co-operative
    1 Dick Morris,Unknown
    1 Dianne Hayter,Unknown
    1 Diana Rookledge,Unknown
@@ -1640,12 +1640,12 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 "John Eatwell, Baron Eatwell",Unknown
    1 "John Bird, Baron Bird",Unknown
    1 "Jenny Randerson, Baroness Randerson",Liberal Democrats (UK)
-   1 "Janet Royall, Baroness Royall of Blaisdon",Labour Co-operative
+   1 "Janet Royall, Baroness Royall of Blaisdon",Labour and Co-operative
    1 "Jane Ewart-Biggs, Baroness Ewart-Biggs",Labour Party (UK)
    1 "Jane Bonham Carter, Baroness Bonham-Carter of Yarnbury",Unknown
    1 "Haleh Afshar, Baroness Afshar",Unknown
    1 "George Thomas, 1st Viscount Tonypandy",Labour Party (UK)
-   1 "George Foulkes, Baron Foulkes of Cumnock",Labour Co-operative
+   1 "George Foulkes, Baron Foulkes of Cumnock",Labour and Co-operative
    1 "George Brown, Baron George-Brown",Labour Party (UK)
    1 "Frank Judd, Baron Judd",Labour Party (UK)
    1 "Edward Shackleton, Baron Shackleton",Unknown

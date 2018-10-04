@@ -105,7 +105,7 @@ async function getAppearances() {
         
         for (const panellist of panellists) {
 
-          let guest = panellist.replace(/\[.*\]/, '').trim();
+          let title = panellist.replace(/\[.*\]/, '').trim();
           let url = null;
           let party = null;
           let partyUrl = null;
@@ -116,26 +116,38 @@ async function getAppearances() {
           // return an incorrect URL if two panellists on the same episode had 
           // the same name, but that hasn't happend YET.
           $('a').each(function(i, elem) {
-            if (guest === $(this).text().replace(/\[.*\]/, '').trim())
+            if (title === $(this).text().replace(/\[.*\]/, '').trim())
               url = $(this).attr('href');
           });
           
           if (url) {
             // If we have a URL for the entity then we try treating it as a 
             // DBpedia object and see if we can look it up.
-            let entityName = url.replace(/^\/wiki\//, '')
-              
+            let entityName = url.replace(/^\/wiki\//, '');
+
             const wikipediaDataForGuest = await new Promise(async (resolve, reject) => {
               const wikipediaJsonUrl = `https://en.wikipedia.org/w/api.php?action=parse&page=${entityName}&redirects=1&format=json`;
 
               if (!wikipediaEntities[entityName]) {
-                let res = null
                 try {
                   // If not in cache, fetch it and add it to cache
-                  res = await fetch(wikipediaJsonUrl);
+                  const res = await fetch(wikipediaJsonUrl);
                   const json = await res.json();
 
-                  wikipediaEntities[entityName] = json;
+                  wikipediaEntities[entityName] = {};
+                                    
+                  if (json && json.parse && json.parse.text) {
+                    const descriptionText = json.parse.text['*'];
+                    const regex = RegExp(/<tr><th scope="row">Political party<\/th><td>\n<a href="\/wiki\/(.*?)"/);
+                    const regexResult = regex.exec(descriptionText);            
+                    if (regexResult) {
+                      wikipediaEntities[entityName].party = regexResult[1];
+                    }
+                  }
+
+                  if (json && json.parse && json.parse.title) {
+                    wikipediaEntities[entityName].title = json.parse.title;
+                  }
 
                   return resolve(wikipediaEntities[entityName]);
                 } catch (e) {
@@ -147,22 +159,13 @@ async function getAppearances() {
               }
             });
 
-            
-            if (wikipediaDataForGuest && wikipediaDataForGuest.parse) {
-              // Normalise entity name if we can
-              if (wikipediaDataForGuest.parse.title) {
-                guest = wikipediaDataForGuest.parse.title;
+            if (wikipediaDataForGuest) {
+              if (wikipediaDataForGuest.title) {
+                title = wikipediaDataForGuest.title;
               }
-            
-              // Get party using regex. It is not structured data in Wikipedia
-              // and is missing from structured data on other sites which often
-              // have outdated data. This seems fragile but is actually reliable
-              // in practice, although there are edge cases.
-              const descriptionText = wikipediaDataForGuest.parse.text['*']
-              const regex = RegExp(/<tr><th scope="row">Political party<\/th><td>\n<a href="\/wiki\/(.*?)"/);
-              const regexResult = regex.exec(descriptionText);            
-              if (regexResult) {
-                party = regexResult[1];
+              
+              if (wikipediaDataForGuest.party) {
+                party = wikipediaDataForGuest.party
               }
             }
             
@@ -170,6 +173,9 @@ async function getAppearances() {
             // Note: This flow still updates the Entity Cache if enabled, we
             // are just overriding the output.
             if (entityPatchFile[entityName]) {
+              if (entityPatchFile[entityName].title) {
+                title = entityPatchFile[entityName].title
+              }
               if (entityPatchFile[entityName].party) {
                 party = entityPatchFile[entityName].party
               }
@@ -180,15 +186,15 @@ async function getAppearances() {
             Episode: Number(row['#']) || 0,
             Date: EpisodeDate,
             Location: EpisodeLocation,
-            Guest: decodeURIComponent(guest),
+            Guest: decodeURIComponent(title),
             GuestUrl: (url) ? url.replace(/^\/wiki\//, 'https://en.wikipedia.org/wiki/') : '',
             Party: (party) ? decodeURIComponent(party.replace(/_/g, ' ')) : 'Unknown',
             PartyUrl: (party) ? `https://en.wikipedia.org/wiki/${party}` : ''
           };
           
-          // Only output if we actually have at least a guest name.
+          // Only output if we actually have at least a guest name ('title').
           // (Some entries are like this, e.g. not yet aired or missing data).
-          if (guest) {
+          if (title) {
             // Only print column headings on first row
             if (isFirstRow === true) {
               isFirstRow = false;
@@ -197,15 +203,15 @@ async function getAppearances() {
               console.log(json2csv(apperance, { header: false }));
             }          
           }
+          
+          // Save to cache to disk incrimentally as we go
+          if (USE_ENTITY_CACHE === true) {
+            fs.writeFileSync(ENTITY_CACHE_FILE, JSON.stringify(wikipediaEntities, null, 2));
+          } 
         }
       }
     }
   }
-  
-  if (USE_ENTITY_CACHE === true) {
-    fs.writeFileSync(ENTITY_CACHE_FILE, JSON.stringify(wikipediaEntities, null, 2));
-  }
-  
 }
 
 async function getEpisodeListJson() {

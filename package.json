@@ -1,7 +1,7 @@
 {
   "name": "bbc-question-time-data",
-  "version": "1.2.0",
-  "description": "Data (and scripts to fetch data) for the BBC Question Time TV show",
+  "version": "1.2.1",
+  "description": "Data and scripts to collate data for the BBC Question Time TV show",
   "main": "index.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
