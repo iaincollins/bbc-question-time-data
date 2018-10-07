@@ -55,7 +55,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
   18 "Charlie Falconer, Baron Falconer of Thoroton",Labour Party
   17 Max Hastings,Unknown
   17 Leanne Wood,Plaid Cymru
-  17 George Galloway,Independant
+  17 George Galloway,Independent
   17 David Owen,Labour Party
   17 Chris Bryant,Labour Party
   17 Andy Burnham,Labour Party
@@ -164,14 +164,14 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    9 David Trimble,Conservative Party
    9 David Miliband,Labour Party
    9 Dafydd Wigley,Plaid Cymru
-   9 Cyril Smith,Independant
+   9 Cyril Smith,Independent
    9 Arthur Scargill,Unknown
    9 "Tom King, Baron King of Bridgwater",Conservative Party
    9 "Bill Rodgers, Baron Rodgers of Quarry Bank",Labour Party
    8 Virginia Bottomley,Conservative Party
    8 Tristram Hunt,Labour Party
    8 Tessa Jowell,Labour Party
-   8 Salma Yaqoob,Independant
+   8 Salma Yaqoob,Independent
    8 Philip Hammond,Conservative Party
    8 Peter Shore,Labour Party
    8 Peter Mandelson,Labour Party
@@ -294,7 +294,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    5 Ruth Wishart,Unknown
    5 Russell Johnston,Unknown
    5 Rodney Bickerstaffe,Unknown
-   5 Robert Kilroy-Silk,Independant
+   5 Robert Kilroy-Silk,Independent
    5 Rhodri Morgan,Labour Party
    5 Phil Willis,Liberal Party
    5 Norman Lamb,Labour Party
@@ -319,7 +319,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    5 Humza Yousaf,Scottish National Party
    5 Geoffrey Rippon,Conservative Party
    5 Frederick Forsyth,Unknown
-   5 Frank Field (British politician),Independant
+   5 Frank Field (British politician),Independent
    5 Francis Pym,Conservative Party
    5 Estelle Morris,Labour Party
    5 Eric Pickles,Conservative Party
@@ -375,7 +375,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    4 Merlyn Rees,Labour Party
    4 Mary Kenny,Unknown
    4 Mary Creagh,Labour Party
-   4 Martin Bell,Independant
+   4 Martin Bell,Independent
    4 Mark Steel,Unknown
    4 Maajid Nawaz,Unknown
    4 Lynne Featherstone,Liberal Party
@@ -476,7 +476,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Mary Archer,Unknown
    3 Mark Serwotka,Unknown
    3 Margot James,Conservative Party
-   3 Margo MacDonald,Independant
+   3 Margo MacDonald,Independent
    3 Maggie Clay,Unknown
    3 Madsen Pirie,Unknown
    3 Louise Christian,Unknown
@@ -520,7 +520,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Eddie Izzard,Unknown
    3 Donald Trelford,Unknown
    3 Dick Taverne,Labour Party
-   3 Diane James,Independant
+   3 Diane James,Independent
    3 Derek Simpson (trade unionist),Labour Party
    3 Denzil Davies,Labour Party
    3 Dennis Skinner,Labour Party
@@ -652,7 +652,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Mary Holland,Unknown
    2 Martin Sorrell,Unknown
    2 Martha Lane Fox,Crossbencher
-   2 Mark Reckless,Independant
+   2 Mark Reckless,Independent
    2 Mark Harper,Conservative Party
    2 Marion Roe,Conservative Party
    2 Mariella Frostrup,Unknown
@@ -714,7 +714,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Jean Millar,Unknown
    2 Jean Denton,Unknown
    2 Janice Lennon,Unknown
-   2 Janice Atkinson,Independant
+   2 Janice Atkinson,Independent
    2 Janey Buchan,Unknown
    2 Janet Fookes,Conservative Party
    2 Jan Hall,Unknown
@@ -768,7 +768,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 David Frum,Unknown
    2 David Evans (British politician),Unknown
    2 Darcus Howe,Unknown
-   2 Dafydd Elis-Thomas,Independant
+   2 Dafydd Elis-Thomas,Independent
    2 Conrad Black,Unknown
    2 Colleen Graffy,Unknown
    2 Clive Sinclair,Unknown
@@ -1081,7 +1081,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Miriam Karlin,Unknown
    1 Miranda Sawyer,Unknown
    1 Mike Thomas (politician),Labour Party
-   1 Mike Hancock (British politician),Independant
+   1 Mike Hancock (British politician),Independent
    1 Michael White (journalist),Unknown
    1 Michael Spicer,Conservative Party
    1 Michael Russell (politician),Scottish National Party
@@ -1424,7 +1424,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Derek Draper,Unknown
    1 Derek Dougan,Unknown
    1 Dennis Potter,Unknown
-   1 Dennis Canavan,Independant
+   1 Dennis Canavan,Independent
    1 Denise Searle,Unknown
    1 Declan Kearney,Sinn Féin
    1 Deborah Orr,Unknown

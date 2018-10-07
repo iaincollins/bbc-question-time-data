@@ -5,7 +5,7 @@ $ cat appearances.csv | csvcut -K 1 -c 6 -- | sort | uniq -c | sort -nr
  571 Liberal Party
  108 Scottish National Party
   64 UK Independence Party
-  62 Independant
+  62 Independent
   61 Plaid Cymru
   36 Green Party
   17 Social Democratic and Labour Party

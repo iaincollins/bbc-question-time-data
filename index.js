@@ -278,7 +278,7 @@ function getNormalizedPartyName(partyEntityName) {
   } else if (greens.includes(partyEntityName)) {
     return "Green Party";
   } else if (independant.includes(partyEntityName)) {
-    return "Independant";
+    return "Independent";
   } else {
     return decodeURIComponent(partyEntityName).replace(/_/g, ' ');
   }
