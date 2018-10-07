@@ -2169,10 +2169,6 @@
     "party": "Scottish_National_Party",
     "title": "Roseanna Cunningham"
   },
-  "Michael_Hirst_(politician)": {
-    "party": "Scottish_Conservative_and_Unionist_Party",
-    "title": "Michael Hirst (politician)"
-  },
   "John_Maples,_Baron_Maples": {
     "party": "Conservative_Party_(UK)",
     "title": "John Maples"
@@ -5319,5 +5315,9 @@
   },
   "Claude_Littner": {
     "title": "Claude Littner"
+  },
+  "Michael_Hirst_(politician)": {
+    "party": "Scottish_Conservatives",
+    "title": "Michael Hirst (politician)"
   }
 }

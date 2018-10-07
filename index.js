@@ -135,7 +135,7 @@ async function getAppearances() {
                   const json = await res.json();
 
                   wikipediaEntities[entityName] = {};
-                                    
+
                   if (json && json.parse && json.parse.text) {
                     const descriptionText = json.parse.text['*'];
                     const regex = RegExp(/<tr><th scope="row">Political party<\/th><td>\n<a href="\/wiki\/(.*?)"/);
@@ -188,8 +188,8 @@ async function getAppearances() {
             Location: EpisodeLocation,
             Guest: decodeURIComponent(title),
             GuestUrl: (url) ? url.replace(/^\/wiki\//, 'https://en.wikipedia.org/wiki/') : '',
-            Party: (party) ? decodeURIComponent(party.replace(/_/g, ' ')) : 'Unknown',
-            PartyUrl: (party) ? `https://en.wikipedia.org/wiki/${party}` : ''
+            Party: getNormalizedPartyName(party),
+            PartyUrl: (party) ? `https://en.wikipedia.org/wiki/${party}` : '',
           };
           
           // Only output if we actually have at least a guest name ('title').
@@ -201,23 +201,22 @@ async function getAppearances() {
               console.log(json2csv(apperance));
             } else {
               console.log(json2csv(apperance, { header: false }));
-            }          
+            }
           }
           
-          // Save to cache to disk incrimentally as we go
-          if (USE_ENTITY_CACHE === true) {
-            fs.writeFileSync(ENTITY_CACHE_FILE, JSON.stringify(wikipediaEntities, null, 2));
-          } 
         }
       }
     }
+  }
+  if (USE_ENTITY_CACHE === true) {
+    fs.writeFileSync(ENTITY_CACHE_FILE, JSON.stringify(wikipediaEntities, null, 2));
   }
 }
 
 async function getEpisodeListJson() {
   return new Promise(resolve => {
     if (USE_EPISODE_CACHE === true) {
-      const html = fs.readFileSync(path.resolve(__dirname, EPISODES_FILE), {encoding: 'UTF-8'});      
+      const html = fs.readFileSync(path.resolve(__dirname, EPISODES_FILE), {encoding: 'UTF-8'});
       const json = tabletojson.convert(html, { stripHtmlFromCells: false });
       return resolve(json);
     } else {
@@ -228,6 +227,61 @@ async function getEpisodeListJson() {
       );
     }
   });
+}
+
+// Normalizes party names to account for regional variants and mergers.
+function getNormalizedPartyName(partyEntityName) {
+  if (!partyEntityName)
+    return 'Unknown';
+  
+  const conservatives = [
+    'Conservative_Party_(UK)',
+    'Scottish_Conservatives',
+    'Welsh_Conservative_Party'
+  ];
+  
+  // The Labour and Co-operative Party is a special case, it is more than just 
+  // an affiliated party.
+  const labour = [
+    'Labour_Party_(UK)',
+    'Scottish_Labour_Party',
+    'Welsh_Labour',
+    'Labour_and_Co-operative'
+  ];
+  
+  // Social Democratic Party & Liberal Party merged as Liberal Democrats in 1998
+  const liberals = [
+    'Liberal_Democrats_(UK)',
+    'Scottish_Liberal_Democrats',
+    'Welsh_Liberal_Democrats',
+    'Liberal_Party_(UK)',
+    'Social_Democratic_Party_(UK)'
+  ];
+  
+  const greens = [
+    'Green_Party_(UK)',
+    'Green_Party_of_England_and_Wales',
+    'Scottish_Green_Party',
+  ];
+
+  const independant = [
+    'Independent_politician',
+    'Independent_(politics)'
+  ];
+  
+  if (conservatives.includes(partyEntityName)) {
+    return "Conservative Party";
+  } else if (labour.includes(partyEntityName)) {
+    return "Labour Party";
+  } else if (liberals.includes(partyEntityName)) {
+    return "Liberal Party";
+  } else if (greens.includes(partyEntityName)) {
+    return "Green Party";
+  } else if (independant.includes(partyEntityName)) {
+    return "Independant";
+  } else {
+    return decodeURIComponent(partyEntityName).replace(/_/g, ' ');
+  }
 }
 
 function getEntity(entityName) {

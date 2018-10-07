@@ -1,34 +1,58 @@
 {
   "Alan_Beith": {
+    "@notes": "Liberal Democrat, formerly Liberal Party, until it merged with the Social Democratic Party in 1988",
     "party": "Liberal_Democrats_(UK)"
   },
   "Alex_Salmond": {
+    "@notes": "SNP member until resignation in 2018",
     "party": "Scottish_National_Party"
   },
   "Andrew_Lansley": {
-    "party": "Liberal_Democrats_(UK)"    
+    "@notes": "Conservative Party, formerly Social Democratic Party until 1988",
+    "party": "Conservative_Party_(UK)"
   },
   "Chris_Huhne": {
+    "@notes": "Now independant, but appeared as a Liberal Democrat in all appearances from 2005 to 2011, formerly Social Democratic Party, until it merged with the Liberal Party in 1988",
     "party": "Liberal_Democrats_(UK)"
+  },
+  "Clare_Short": {
+    "@notes": "Independant since 2006 but she mostly appeared as a Labour MP (1983-2010)",
+    "party": "Labour_Party_(UK)"
   },
   "Cyril_Smith": {
     "@notes": "Variously LAB, LP, LD and Independent",
     "party": "Independent_politician"
   },
   "Douglas_Carswell": {
+    "@notes": "Most recently independent, formerly a member of Conservative Party until 2017 but a member of UKIP in all appearances from 2014 to 2017",
     "party": "UK_Independence_Party"
   },
   "Enoch_Powell": {
-    "@notes": "While best known as a member of the Conservatives, appeared as a member of the UUP (1974–87)",
+    "@notes": "While best known as a member of the Conservatives he appeared as a member of the UUP 1974–87",
     "party": "Ulster_Unionist_Party"
-  },  
+  },
+  "Jeffrey_Archer": {
+    "@notes": "Life peer since 1992, Conservative MP 1969–1974, deputy chairman of the Conservative Party 1985–1986",
+    "party": "Conservative_Party_(UK)"
+  },
+  "Ken_Livingstone": {
+    "@notes": "While he resigned from the Labour Party in 2018 he was a member in all appearances from 1982 to 2015",
+    "party": "Labour_Party_(UK)"
+  },
   "Mark_Oaten": {
+    "@notes": "Liberal Democrat, formerly Social Democratic Party, until it merged with the Liberal Party in 1988",
     "party": "Liberal_Democrats_(UK)"
   },
   "Menzies_Campbell": {
+    "@notes": "Liberal Democrat, formerly Liberal Party, until it merged with the Social Democratic Party in 1988",
     "party": "Liberal_Democrats_(UK)"
   },
+  "Norman_Fowler": {
+    "@notes": "Speaker of the House of Lords, member of the Conservative Party until 2016",
+    "party": "Conservative_Party_(UK)"
+  },
   "Peter_Hain": {
-    "party": "Liberal_Democrats_(UK)"
+    "@notes": "Labour Party, formerly Liberal Party until 1977",
+    "party": "Labour_Party_(UK)"
   }
 }
