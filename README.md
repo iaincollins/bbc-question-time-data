@@ -1,18 +1,14 @@
 # BBC Question Time Data
 
-Data - and scripts to output data - for the BBC Question Time TV show.
+Apperance data for the BBC Question Time TV show, and scripts to genreate the apperance data.
 
-This includes a record of each appearance by a guest, along with their Wikipedia entry to uniquely identify them and - where possible - it includes the political party affiliation for politicians.
+It includes a record of each appearance by a guest, along with their Wikipedia entry to uniquely identify them and - where possible - it includes the political party affiliation for politicians.
 
-An outcome from this project has been to improve the on underlying data stored in Wikipedia to make the structured data it contains more useful.
+An outcome from this project has been to improve the on underlying data stored in Wikipedia to make the structured data it contains more useful. [I have also written about it](https://medium.com/@iaincollins/bias-in-bbc-question-time-66f77ecc11ec).
 
 ## Licence
 
-The data is extracted from Wikipedia and is licenced under Creative Commons Attribution Share-Alike license (CC-BY-SA).
-
-The data was entered by contributors to https://en.wikipedia.org/wiki/List_of_Question_Time_episodes and related pages.
-
-Feel free to use and/or modify this script or this data with appropraite credit.
+The data is extracted from Wikipedia and is licenced under Creative Commons Attribution Share-Alike license (CC-BY-SA). The data was entered by contributors to https://en.wikipedia.org/wiki/List_of_Question_Time_episodes and related pages. Feel free to use and/or modify this script or this data with appropriate credit.
 
 ## Contributing
 
@@ -33,8 +29,8 @@ The context for this project is that the BBC have shared graphics and statistics
 
 ## Known Limitations
 
-* Getting accurate data is hard as people switch parties, parties split up, merge, people leave/are expelled from parties and ultimately the data is entered by humans who make mistakes. This is a 'best effort' approach.
-* Party data is not exhaustive. It does not include party data for everyone and there are instances where it may not be correct.
+* Getting accurate data is hard as people switch parties, parties split up, merge, people leave/are expelled from parties and ultimately the data is entered by humans who make mistakes. This is a 'best effort' approach that you are free to improve on.
+* Party data is not exhaustive. It does not include party data for everyone and there are instances where it may not be correct because there are quite a few edge cases.
 * The data is crowd sourced and the code is open sourced. Contributions and corrections are welcome. If you report a specific and actionable inaccuracy it will be corrected.
 * The party data displayed here is specifically for guests who are politicians, who (for the most part) are unambiguously associated with a specific political party.
 * It does not currently reflect the political affiliation of guests who are not politicians as their alignment is not always known and harder to decern.
@@ -42,7 +38,7 @@ The context for this project is that the BBC have shared graphics and statistics
 
 ### Technical Limitations
 
-* This script has no formal tests and has not been peer reviewed.
+* This script has no formal tests and has not been peer reviewed, although it remains the most comprehensive, transparent and open analysis that exists. 
 * If the script encounters errors fetching data (e.g. rate limiting) it will gracefully fail without an error and will assume data is just not available, which may result in have incomplete data in the resulting output. 
 * The script is synchronous to mitigate rate limits on the Wikipedia API when not using the included cached data (which is perodically updated).
 
