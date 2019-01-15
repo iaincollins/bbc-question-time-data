@@ -18,7 +18,7 @@ Reports of actionable inaccuracies with the the data and pull requests to fix is
 
 The easiest way to correct a problem may be to update the Wikipedia page for for the list of Question Time Episodes or for the guest who is listed.
 
-If the issue is specific to how this software interperates that data or if you are unsure how to correct it you can raise an issue report at https://github.com/iaincollins/bbc-question-time-data/issues, email me@iaincollins.com or tweet @iaincollins
+If the issue is specific to how this software interperates that data or if you are unsure how to correct it you can raise an issue report at https://github.com/iaincollins/bbc-question-time-data/issues, email me@iaincollins.com or find me on twitter at [@iaincollins](https://twitter.com/iaincollins)
 
 ## Context 
 
