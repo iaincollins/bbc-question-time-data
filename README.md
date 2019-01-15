@@ -1,10 +1,12 @@
 # BBC Question Time Data
 
-Apperance data for the BBC Question Time TV show, and scripts to genreate the apperance data.
+Appearance data for the BBC Question Time TV show, and scripts to genreate the apperance data.
 
 It includes a record of each appearance by a guest, along with their Wikipedia entry to uniquely identify them and - where possible - it includes the political party affiliation for politicians.
 
-An outcome from this project has been to improve the on underlying data stored in Wikipedia to make the structured data it contains more useful. [I have also written about it](https://medium.com/@iaincollins/bias-in-bbc-question-time-66f77ecc11ec).
+An outcome from this project has been to improve the on underlying data stored in Wikipedia to make the structured data it contains more useful.
+
+[I've done a write up about it on Medium](https://medium.com/@iaincollins/bias-in-bbc-question-time-66f77ecc11ec) and it's mentioned and the data used [in this Economist article](https://www.economist.com/graphic-detail/2019/01/09/question-time-the-bbcs-flagship-political-show-gets-a-female-host).
 
 ## Licence
 
@@ -70,4 +72,4 @@ The script usually takes a couple of minutes to run. It is faster towards the en
 
 ## Credit
 
-Another terrible idea by <me@iaincollins.com> enabled by Node.js and Wikipedia and people who write nice open source software. Thank you to everyone who has contributed Wikipedia without which publishing data like this would not be possible.
+By <me@iaincollins.com> with thanks to the numerous contributors to free open source software and Wikipedia, without which publishing data like this would not be possible.
