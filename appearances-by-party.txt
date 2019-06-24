@@ -1,23 +1,21 @@
 $ cat appearances.csv | csvcut -K 1 -c 6 -- | sort | uniq -c | sort -nr
-2250 Unknown
-1470 Labour Party
-1357 Conservative Party
- 571 Liberal Party
- 108 Scottish National Party
-  64 UK Independence Party
-  62 Independent
-  61 Plaid Cymru
-  36 Green Party
+2372 Unknown
+1510 Labour Party
+1397 Conservative Party
+ 579 Liberal Party
+ 117 Scottish National Party
+  82 Independent
+  65 UK Independence Party
+  62 Plaid Cymru
+  38 Green Party
   17 Social Democratic and Labour Party
-  16 Sinn Féin
-  13 Crossbench
+  17 Sinn Féin
   12 Democratic Party (United States)
   11 Ulster Unionist Party
-  10 Democratic Unionist Party
-   6 Crossbencher
+  11 Democratic Unionist Party
    5 Republican Party (United States)
    5 Fine Gael
-   3 MeRA25
+   4 MeRA25
    3 Labour Party (Ireland)
    2 UK Unionist Party
    2 The Republicans (France)

@@ -1,181 +1,188 @@
 $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
-  58 Kenneth Clarke,Conservative Party
-  57 Shirley Williams,Labour Party
-  46 Menzies Campbell,Liberal Party
-  44 Harriet Harman,Labour Party
-  43 Charles Kennedy,Liberal Party
+  59 Kenneth Clarke,Conservative Party
+  58 Shirley Williams,Labour Party
+  47 Menzies Campbell,Liberal Party
+  45 Harriet Harman,Labour Party
+  44 Charles Kennedy,Liberal Party
   38 Michael Heseltine,Conservative Party
-  37 Clare Short,Labour Party
+  38 Clare Short,Labour Party
+  36 Roy Hattersley,Labour Party
   36 Paddy Ashdown,Liberal Party
-  35 Roy Hattersley,Labour Party
   34 Simon Hughes,Liberal Party
-  32 Nigel Farage,UK Independence Party
+  33 Nigel Farage,UK Independence Party
   31 Tony Benn,Labour Party
-  30 Robin Cook,Labour Party
+  31 Robin Cook,Labour Party
   30 Peter Hain,Labour Party
-  29 Margaret Beckett,Labour Party
+  30 Margaret Beckett,Labour Party
+  30 Diane Abbott,Labour Party
+  29 Melanie Phillips,Unknown
+  29 John Prescott,Labour Party
   29 Alex Salmond,Scottish National Party
-  28 Melanie Phillips,Unknown
-  28 John Prescott,Labour Party
-  28 Diane Abbott,Labour Party
+  28 Vince Cable,Liberal Party
   28 David Steel,Liberal Party
-  27 Vince Cable,Liberal Party
   27 Theresa May,Conservative Party
   27 Ann Leslie,Unknown
   26 Peter Hitchens,Unknown
   26 John Redwood,Conservative Party
-  25 David Davis (British politician),Conservative Party
+  26 David Davis (British politician),Conservative Party
+  25 Ken Livingstone,Labour Party
+  25 Caroline Lucas,Green Party
+  24 Piers Morgan,Unknown
+  24 Norman Tebbit,Conservative Party
   24 Caroline Flint,Labour Party
-  23 Piers Morgan,Unknown
-  23 Norman Tebbit,Conservative Party
   23 Michael Howard,Conservative Party
-  23 Ken Livingstone,Labour Party
   23 Gerald Kaufman,Labour Party
   23 Douglas Alexander,Labour Party
-  23 Caroline Lucas,Green Party
   22 Liam Fox,Conservative Party
   22 Edwina Currie,Conservative Party
+  21 Shami Chakrabarti,Labour Party
   21 Polly Toynbee,Unknown
   21 Michael Ancram,Conservative Party
   21 David Willetts,Conservative Party
   21 David Blunkett,Labour Party
-  20 Shami Chakrabarti,Labour Party
   20 Nicola Sturgeon,Scottish National Party
   20 Malcolm Rifkind,Conservative Party
   20 Janet Street-Porter,Unknown
   20 Germaine Greer,Unknown
+  20 Emily Thornberry,Labour Party
   19 Roy Jenkins,Labour Party
   19 John Smith (Labour Party leader),Labour Party
   19 Jack Straw,Labour Party
   19 Francis Maude,Conservative Party
+  18 Jo Swinson,Liberal Party
   18 Ian Hislop,Unknown
   18 Iain Duncan Smith,Conservative Party
-  18 Emily Thornberry,Labour Party
+  18 David Owen,Labour Party
   18 "Jenny Tonge, Baroness Tonge",Unknown
   18 "Charlie Falconer, Baron Falconer of Thoroton",Labour Party
   17 Max Hastings,Unknown
   17 Leanne Wood,Plaid Cymru
   17 George Galloway,Independent
-  17 David Owen,Labour Party
   17 Chris Bryant,Labour Party
+  17 Charles Moore (journalist),Unknown
   17 Andy Burnham,Labour Party
   17 Alan Duncan,Conservative Party
   16 Sarah Teather,Liberal Party
+  16 Norman Lamont,Conservative Party
+  16 Nigel Lawson,Conservative Party
   16 Mo Mowlam,Labour Party
   16 Malcolm Bruce,Liberal Party
-  16 Jo Swinson,Liberal Party
   16 Geoff Hoon,Labour Party
   16 Douglas Hurd,Conservative Party
   16 Denis Healey,Labour Party
   16 David Starkey,Unknown
   16 Chuka Umunna,Labour Party
   16 Chris Huhne,Liberal Party
+  16 Anna Soubry,Conservative Party
   16 Alan Johnson,Labour Party
   16 "Susan Kramer, Baroness Kramer",Liberal Party
   16 "Sayeeda Warsi, Baroness Warsi",Conservative Party
   15 Yvette Cooper,Labour Party
+  15 Tony Blair,Labour Party
   15 Tim Farron,Liberal Party
   15 Ruth Lea,Unknown
   15 Patricia Hewitt,Labour Party
-  15 Nigel Lawson,Conservative Party
   15 Lembit Öpik,Liberal Party
   15 Justine Greening,Conservative Party
-  15 Charles Moore (journalist),Unknown
-  15 Anna Soubry,Conservative Party
   15 Ann Widdecombe,Conservative Party
   15 Andrew Neil,Unknown
+  15 Alan Beith,Liberal Party
   15 "Norman Fowler, Baron Fowler",Conservative Party
   15 "Kenneth Baker, Baron Baker of Dorking",Conservative Party
   14 William Hague,Conservative Party
   14 Will Self,Unknown
-  14 Tony Blair,Labour Party
-  14 Norman Lamont,Conservative Party
   14 Matthew Parris,Unknown
   14 Janet Daley,Unknown
   14 Cristina Odone,Unknown
+  14 Chris Patten,Conservative Party
   14 Chris Grayling,Conservative Party
-  14 Alan Beith,Liberal Party
   13 Mark Oaten,Liberal Party
+  13 Julia Hartley-Brewer,Unknown
+  13 Gordon Brown,Labour Party
   13 Donald Dewar,Labour Party
-  13 Chris Patten,Conservative Party
+  13 Damian Green,Conservative Party
   13 Caroline Spelman,Conservative Party
   13 Boris Johnson,Conservative Party
   13 Andrew Lansley,Conservative Party
+  13 "Beatrice Seear, Baroness Seear",Unknown
   13 "Ann Taylor, Baroness Taylor of Bolton",Labour Party
   12 Paul Nuttall,UK Independence Party
   12 Michael Portillo,Unknown
   12 Michael Gove,Conservative Party
+  12 Margaret Hodge,Labour Party
+  12 Liz Lynne,Liberal Party
   12 Kelvin MacKenzie,Unknown
   12 Grant Shapps,Conservative Party
-  12 Gordon Brown,Labour Party
+  12 Fraser Nelson,Unknown
   12 Frank Dobson,Labour Party
+  12 Ed Davey,Liberal Party
   12 David Mellor,Unknown
-  12 Damian Green,Conservative Party
   12 Cecil Parkinson,Conservative Party
   12 Alistair Darling,Labour Party
   12 "William Waldegrave, Baron Waldegrave of North Hill",Conservative Party
   12 "Matthew Taylor, Baron Taylor of Goss Moor",Liberal Party
+  12 "Jack Cunningham, Baron Cunningham of Felling",Labour Party
   12 "George Robertson, Baron Robertson of Port Ellen",Labour Party
-  12 "Beatrice Seear, Baroness Seear",Unknown
+  11 Simon Jenkins,Unknown
   11 Paul Boateng,Labour Party
   11 Michael Meacher,Labour Party
   11 Mary Ann Sieghart,Unknown
-  11 Margaret Hodge,Labour Party
-  11 Liz Lynne,Liberal Party
-  11 Julia Hartley-Brewer,Unknown
   11 John Harvey-Jones,Unknown
   11 Joan Ruddock,Labour Party
+  11 Isabel Oakeshott,Unknown
   11 Hazel Blears,Labour Party
   11 Geoffrey Howe,Conservative Party
-  11 Fraser Nelson,Unknown
-  11 Ed Davey,Liberal Party
   11 Douglas Murray (author),Unknown
   11 Bryan Gould,Labour Party
   11 Antonia Fraser,Unknown
   11 Annabel Goldie,Conservative Party
   11 Amanda Platell,Unknown
-  11 "Jack Cunningham, Baron Cunningham of Felling",Labour Party
+  11 "Nicholas Ridley, Baron Ridley of Liddesdale",Conservative Party
   10 Yasmin Alibhai-Brown,Unknown
   10 Teresa Gorman,Conservative Party
-  10 Simon Jenkins,Unknown
   10 Simon Heffer,Unknown
   10 Peter Lilley,Conservative Party
   10 Oliver Letwin,Conservative Party
   10 Lynda Chalker,Conservative Party
   10 Julia Goldsworthy,Liberal Party
-  10 Isabel Oakeshott,Unknown
+  10 John Swinney,Scottish National Party
   10 Edward Heath,Conservative Party
   10 David Laws,Liberal Party
+  10 Dafydd Wigley,Plaid Cymru
   10 Charles Clarke,Labour Party
   10 Bonnie Greer,Unknown
   10 Ben Bradshaw,Labour Party
   10 Angela Rumbold,Conservative Party
-  10 "Nicholas Ridley, Baron Ridley of Liddesdale",Conservative Party
+  10 "John MacGregor, Baron MacGregor of Pulham Market",Conservative Party
   10 "Emma Nicholson, Baroness Nicholson of Winterbourne",Conservative Party
   10 "Detta O'Cathain, Baroness O'Cathain",Conservative Party
+   9 Virginia Bottomley,Conservative Party
+   9 Tessa Jowell,Labour Party
    9 Ruth Davidson,Conservative Party
    9 Rod Liddle,Unknown
    9 Richard Littlejohn,Unknown
    9 Mehdi Hasan,Unknown
+   9 Margaret Ewing,Scottish National Party
+   9 Lisa Nandy,Labour Party
    9 Leon Brittan,Conservative Party
-   9 John Swinney,Scottish National Party
+   9 Jacob Rees-Mogg,Conservative Party
    9 George Osborne,Conservative Party
    9 Des Wilson,Unknown
    9 David Trimble,Conservative Party
    9 David Miliband,Labour Party
-   9 Dafydd Wigley,Plaid Cymru
    9 Cyril Smith,Independent
    9 Arthur Scargill,Unknown
+   9 Alan Clark,Conservative Party
    9 "Tom King, Baron King of Bridgwater",Conservative Party
+   9 "John Patten, Baron Patten",Conservative Party
    9 "Bill Rodgers, Baron Rodgers of Quarry Bank",Labour Party
-   8 Virginia Bottomley,Conservative Party
    8 Tristram Hunt,Labour Party
-   8 Tessa Jowell,Labour Party
    8 Salma Yaqoob,Independent
    8 Philip Hammond,Conservative Party
    8 Peter Shore,Labour Party
    8 Peter Mandelson,Labour Party
    8 Norman St John-Stevas,Conservative Party
+   8 Nicky Morgan,Conservative Party
    8 Nick Clegg,Liberal Party
    8 Nick Brown,Labour Party
    8 Nicholas Soames,Conservative Party
@@ -183,61 +190,72 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    8 John Denham (politician),Labour Party
    8 Jeremy Hunt,Conservative Party
    8 Jane Moore,Unknown
-   8 Jacob Rees-Mogg,Conservative Party
    8 Hilary Benn,Labour Party
    8 Enoch Powell,Ulster Unionist Party
    8 Elizabeth Truss,Conservative Party
    8 Elfyn Llwyd,Plaid Cymru
+   8 David Aaronovitch,Unknown
    8 Danny Alexander,Liberal Party
+   8 Benjamin Zephaniah,Unknown
    8 Angela Browning,Conservative Party
-   8 Alan Clark,Conservative Party
    8 "Rosie Boycott, Baroness Boycott",Unknown
-   8 "John Patten, Baron Patten",Conservative Party
-   8 "John MacGregor, Baron MacGregor of Pulham Market",Conservative Party
+   8 "Michael Forsyth, Baron Forsyth of Drumlean",Conservative Party
+   8 "David Hunt, Baron Hunt of Wirral",Conservative Party
    8 "Chris Smith, Baron Smith of Finsbury",Labour Party
    7 Tim Yeo,Conservative Party
+   7 Tim Stanley,Unknown
+   7 Theresa Villiers,Conservative Party
    7 Sue Slipman,Unknown
    7 Stella Creasy,Labour Party
    7 Simon Schama,Unknown
    7 Sandi Toksvig,Unknown
    7 Sajid Javid,Conservative Party
+   7 Owen Jones (writer),Unknown
    7 Norman Baker,Liberal Party
    7 Nick Harvey,Liberal Party
    7 Neil Kinnock,Labour Party
    7 Michael Moore (British politician),Liberal Party
-   7 Margaret Ewing,Scottish National Party
-   7 Lisa Nandy,Labour Party
+   7 Kwasi Kwarteng,Conservative Party
+   7 Kezia Dugdale,Labour Party
    7 John Banham,Unknown
    7 Jacqui Smith,Labour Party
    7 Jackie Ballard,Liberal Party
+   7 Howard Davies (economist),Unknown
    7 Helen Liddell,Labour Party
    7 Gwyneth Dunwoody,Labour Party
    7 Edward du Cann,Unknown
    7 Ed Miliband,Labour Party
+   7 Dominic Raab,Conservative Party
+   7 David Lammy,Labour Party
    7 David Alton,Unknown
-   7 David Aaronovitch,Unknown
    7 Clive Anderson,Unknown
+   7 Claire Perry,Conservative Party
    7 Billy Bragg,Unknown
    7 Bernard Jenkin,Conservative Party
-   7 Benjamin Zephaniah,Unknown
+   7 Barry Gardiner,Labour Party
    7 Barbara Castle,Labour Party
+   7 Anne McElvoy,Unknown
    7 Ann Clwyd,Labour Party
    7 "Valerie Amos, Baroness Amos",Labour Party
    7 "Tim Razzall, Baron Razzall",Liberal Party
+   7 "Tessa Blackstone, Baroness Blackstone",Unknown
    7 "Sarah Hogg, Viscountess Hailsham",Conservative Party
    7 "Peter Walker, Baron Walker of Worcester",Conservative Party
    7 "Glenys Kinnock, Baroness Kinnock of Holyhead",Labour Party
+   7 "Elizabeth Symons, Baroness Symons of Vernham Dean",Unknown
    7 "Digby Jones, Baron Jones of Birmingham",Crossbench
-   7 "David Hunt, Baron Hunt of Wirral",Conservative Party
+   7 "Camilla Cavendish, Baroness Cavendish of Little Venice",Unknown
    7 "Alex Carlile, Baron Carlile of Berriew",Liberal Party
    6 William Rees-Mogg,Unknown
-   6 Tim Stanley,Unknown
+   6 Tim Martin (businessman),Unknown
    6 Tim Collins (politician),Conservative Party
-   6 Theresa Villiers,Conservative Party
    6 Suzanne Evans,Conservative Party
    6 Stephen Dorrell,Conservative Party
+   6 Sara Parkin,Unknown
+   6 Ruth Wishart,Unknown
    6 Roseanna Cunningham,Scottish National Party
    6 Rosalind Gilmore,Unknown
+   6 Rory Stewart,Conservative Party
    6 Rhodes Boyson,Conservative Party
    6 Rachel Reeves,Labour Party
    6 Quentin Letts,Unknown
@@ -245,61 +263,54 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    6 Peter Oborne,Unknown
    6 Peter Jenkins (journalist),Unknown
    6 Owen Smith,Labour Party
-   6 Owen Jones (writer),Unknown
    6 Oonagh McDonald,Labour Party
    6 Oona King,Labour Party
-   6 Nicky Morgan,Conservative Party
+   6 Nick Ferrari,Unknown
    6 Nadine Dorries,Conservative Party
    6 Michael Winner,Unknown
    6 Liz Kendall,Labour Party
    6 Kirsty Williams,Liberal Party
-   6 Kezia Dugdale,Labour Party
+   6 Kate Andrews,Unknown
    6 Julia Neuberger,Unknown
    6 John Edmonds (trade unionist),Unknown
    6 John Bercow,Conservative Party
+   6 Jo Brand,Unknown
    6 Jim Prior,Conservative Party
    6 Jill Kirby,Unknown
    6 Jeremy Browne,Liberal Party
    6 Jean Lambert,Unknown
-   6 Howard Davies (economist),Unknown
    6 Helen Mary Jones,Plaid Cymru
    6 Giles Fraser,Unknown
    6 Eric Heffer,Labour Party
    6 Ed Balls,Labour Party
    6 Douglas Carswell,UK Independence Party
-   6 Dominic Raab,Conservative Party
    6 David Penhaligon,Liberal Party
-   6 David Lammy,Labour Party
    6 David Cameron,Conservative Party
-   6 Claire Perry,Conservative Party
    6 Cheryl Gillan,Conservative Party
-   6 Anne McElvoy,Unknown
    6 Ann Burdus,Unknown
    6 Angus Robertson,Scottish National Party
+   6 Amber Rudd,Conservative Party
    6 Alastair Campbell,Labour Party
-   6 "Tessa Blackstone, Baroness Blackstone",Unknown
    6 "Susan Thomas, Baroness Thomas of Walliswood",Unknown
    6 "Pauline Neville-Jones, Baroness Neville-Jones",Conservative Party
-   6 "Michael Forsyth, Baron Forsyth of Drumlean",Conservative Party
    6 "Grey Ruthven, 2nd Earl of Gowrie",Conservative Party
    6 "George Younger, 4th Viscount Younger of Leckie",Conservative Party
-   6 "Elizabeth Symons, Baroness Symons of Vernham Dean",Unknown
-   6 "Camilla Cavendish, Baroness Cavendish of Little Venice",Unknown
+   5 Val McDermid,Unknown
    5 Tony McNulty,Labour Party
    5 Toby Young,Conservative Party
    5 Susie Boniface,Unknown
    5 Steven Norris,Conservative Party
-   5 Sara Parkin,Unknown
+   5 Simon Wolfson,Unknown
    5 Sal Brinton,Liberal Party
-   5 Ruth Wishart,Unknown
    5 Russell Johnston,Unknown
    5 Rodney Bickerstaffe,Unknown
    5 Robert Kilroy-Silk,Independent
    5 Rhodri Morgan,Labour Party
    5 Phil Willis,Liberal Party
    5 Norman Lamb,Labour Party
-   5 Nick Ferrari,Unknown
    5 Neil Hamilton (politician),UK Independence Party
+   5 Nadhim Zahawi,Conservative Party
+   5 Merryn Somerset Webb,Unknown
    5 Matt Hancock,Conservative Party
    5 Mary Beard (classicist),Unknown
    5 Martin McGuinness,Sinn Féin
@@ -307,7 +318,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    5 Mark Durkan,Social Democratic and Labour Party
    5 Margaret Curran,Labour Party
    5 Lionel Barber,Unknown
-   5 Kwasi Kwarteng,Conservative Party
    5 Kirstie Allsopp,Unknown
    5 Julian Fellowes,Conservative Party
    5 Jonathon Porritt,Unknown
@@ -315,7 +325,9 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    5 John Maples,Conservative Party
    5 John Hume,Social Democratic and Labour Party
    5 Joan Lestor,Labour Party
-   5 Jo Brand,Unknown
+   5 Jeffrey Archer,Conservative Party
+   5 James Cleverly,Conservative Party
+   5 Ieuan Wyn Jones,Plaid Cymru
    5 Humza Yousaf,Scottish National Party
    5 Geoffrey Rippon,Conservative Party
    5 Frederick Forsyth,Unknown
@@ -327,41 +339,49 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    5 Dia Chakravarty,Unknown
    5 Clive James,Unknown
    5 Christopher Meyer,Unknown
+   5 Camilla Tominey,Unknown
    5 Bruce Anderson (columnist),Unknown
    5 Brenda Dean,Labour Party
    5 Bernard Levin,Unknown
+   5 Bernard Ingham,Unknown
    5 Beatrix Campbell,Unknown
    5 Archy Kirkwood,Liberal Party
+   5 Angela Rayner,Labour Party
    5 Angela Eagle,Labour Party
    5 Andrew Roberts (historian),Unknown
-   5 Amber Rudd,Conservative Party
    5 Allison Pearson,Unknown
+   5 Adam Price,Plaid Cymru
    5 "Tony Newton, Baron Newton of Braintree",Conservative Party
    5 "John Reid, Baron Reid of Cardowan",Labour Party
    5 "Jim Wallace, Baron Wallace of Tankerness",Liberal Party
+   5 "Ian Lang, Baron Lang of Monkton",Unknown
    5 "George Young, Baron Young of Cookham",Conservative Party
    5 "David Howell, Baron Howell of Guildford",Conservative Party
+   4 Zanny Minton Beddoes,Unknown
+   4 Yanis Varoufakis,MeRA25
    4 Victoria Coren Mitchell,Unknown
-   4 Val McDermid,Unknown
+   4 Trevor Phillips,Labour Party
    4 Tony Robinson,Unknown
-   4 Tim Martin (businessman),Unknown
    4 Theo Paphitis,Unknown
    4 Tasmina Ahmed-Sheikh,Conservative Party
    4 Tariq Ali,Unknown
-   4 Simon Wolfson,Unknown
+   4 Steve Jones (biologist),Unknown
    4 Sheila McKechnie,Unknown
    4 Shaun Woodward,Labour Party
+   4 Shappi Khorsandi,Unknown
    4 Sarah Churchwell,Unknown
    4 Sara Morrison,Unknown
    4 Sally Oppenheim-Barnes,Conservative Party
    4 Sadiq Khan,Labour Party
    4 Ruth Kelly,Labour Party
    4 Rosie Barnes,Unknown
-   4 Rory Stewart,Conservative Party
    4 Ron Davies (Welsh politician),Labour Party
    4 Robert Winston,Labour Party
+   4 Richard Burgon,Labour Party
    4 Richard Branson,Unknown
+   4 Rebecca Long-Bailey,Labour Party
    4 Peter Riddell,Unknown
+   4 Paul Mason (journalist),Unknown
    4 Paul Foot (journalist),Unknown
    4 Nigel Dodds,Democratic Unionist Party
    4 Niall Ferguson,Unknown
@@ -371,31 +391,33 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    4 Mike O'Brien (British politician),Labour Party
    4 Michelle Dewberry,Unknown
    4 Michael Foot,Labour Party
-   4 Merryn Somerset Webb,Unknown
    4 Merlyn Rees,Labour Party
    4 Mary Kenny,Unknown
    4 Mary Creagh,Labour Party
    4 Martin Bell,Independent
    4 Mark Steel,Unknown
+   4 Mark Serwotka,Unknown
+   4 Margot James,Conservative Party
    4 Maajid Nawaz,Unknown
    4 Lynne Featherstone,Liberal Party
    4 Louise Mensch,Conservative Party
    4 Louise Bours,UK Independence Party
+   4 Keir Starmer,Labour Party
    4 Kate Hoey,Labour Party
-   4 Kate Andrews,Unknown
    4 Judith Hart,Labour Party
    4 Joyce Quin,Labour Party
    4 John Sentamu,Unknown
    4 John Hackett (British Army officer),Unknown
    4 John Gummer,Conservative Party
    4 John Biffen,Conservative Party
-   4 Jeffrey Archer,Conservative Party
+   4 Jeffrey Donaldson,Democratic Unionist Party
    4 Jane Reed,Unknown
-   4 Ieuan Wyn Jones,Plaid Cymru
    4 Ian Wrigglesworth,Unknown
+   4 Ian Blackford,Scottish National Party
    4 Hilary Armstrong,Labour Party
    4 Greg Dyke,Unknown
    4 Greg Clark,Liberal Party
+   4 Gina Miller,Unknown
    4 George Walden,Unknown
    4 Gavin Laird,Unknown
    4 Garret FitzGerald,Fine Gael
@@ -404,44 +426,35 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    4 Dominic Lawson,Unknown
    4 Denis MacShane,Labour Party
    4 Daniel Hannan,Conservative Party
+   4 Clive Lewis (politician),Labour Party
    4 Clarissa Dickson Wright,Unknown
    4 Chantal Cuer,Unknown
-   4 Camilla Tominey,Unknown
    4 Bríd Rodgers,Social Democratic and Labour Party
    4 Brian Mawhinney,Conservative Party
    4 Bob Crow,Unknown
-   4 Bernard Ingham,Unknown
-   4 Barry Gardiner,Labour Party
    4 Armando Iannucci,Unknown
    4 Anne-Marie Huby,Unknown
    4 Anne Sofer,Unknown
    4 Anne Atkins,Unknown
-   4 Angela Rayner,Labour Party
    4 Alun Michael,Labour Party
-   4 Adam Price,Plaid Cymru
    4 "William Whitelaw, 1st Viscount Whitelaw",Conservative Party
    4 "Tony Banks, Baron Stratford",Labour Party
    4 "Thomas Galbraith, 2nd Baron Strathclyde",Conservative Party
    4 "Patricia Hollis, Baroness Hollis of Heigham",Unknown
    4 "John Moore, Baron Moore of Lower Marsh",Conservative Party
    4 "Joan Walmsley, Baroness Walmsley",Liberal Party
-   4 "Ian Lang, Baron Lang of Monkton",Unknown
    4 "Helena Kennedy, Baroness Kennedy of The Shaws",Labour Party
    4 "Diana Maddock, Baroness Maddock",Liberal Party
-   3 Zanny Minton Beddoes,Unknown
    3 Zac Goldsmith,Unknown
-   3 Yanis Varoufakis,MeRA25
    3 Walter Hayes,Unknown
-   3 Trevor Phillips,Labour Party
    3 Tom Shakespeare,Unknown
    3 Tessa Munt,Liberal Party
    3 Teddy Taylor,Conservative Party
+   3 Suella Braverman,Conservative Party
    3 Sue Stapely,Unknown
-   3 Steve Jones (biologist),Unknown
    3 Stephen Twigg,Labour Party
    3 Stephen Crabb,Conservative Party
    3 Simon Thomas (politician),Plaid Cymru
-   3 Shappi Khorsandi,Unknown
    3 Sarah Wollaston,Conservative Party
    3 Sarah Sands,Unknown
    3 Sandra Gidley,Liberal Party
@@ -449,70 +462,71 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Roger Helmer,Conservative Party
    3 Richard Tice,Unknown
    3 Richard Madeley,Unknown
-   3 Richard Burgon,Labour Party
-   3 Rebecca Long-Bailey,Labour Party
    3 Ray Michie,Liberal Party
    3 Rajendra Persaud,Unknown
    3 Prue Leith,Unknown
    3 Peter Thorneycroft,Conservative Party
    3 Peter Tatchell,Unknown
-   3 Paul Mason (journalist),Unknown
    3 Paul Johnson (writer),Unknown
    3 Paul Channon,Conservative Party
    3 Patrick O'Flynn,UK Independence Party
    3 Patrick McLoughlin,Conservative Party
-   3 Patrick Mayhew,Conservative Party
    3 Patrick Jenkin,Conservative Party
    3 Patrick Harvie,Green Party
    3 Paris Lees,Unknown
+   3 Nish Kumar,Unknown
    3 Nicola Horlick,Unknown
    3 Nicol Stephen,Liberal Party
    3 Nicholas Henderson,Unknown
-   3 Nadhim Zahawi,Conservative Party
    3 Michael Nazir-Ali,Unknown
    3 Michael Meadowcroft,Unknown
    3 Michael Dobbs,Conservative Party
    3 Matt Forde,Unknown
    3 Mary Archer,Unknown
-   3 Mark Serwotka,Unknown
-   3 Margot James,Conservative Party
+   3 Mark Reckless,Independent
    3 Margo MacDonald,Independent
+   3 Mairead McGuinness,Unknown
    3 Maggie Clay,Unknown
    3 Madsen Pirie,Unknown
    3 Louise Christian,Unknown
+   3 Liz Saville Roberts,Unknown
    3 Lisa Jardine,Unknown
+   3 Lionel Shriver,Unknown
    3 Liam Byrne,Labour Party
    3 Lesley Riddoch,Unknown
    3 Len McCluskey,Labour Party
    3 Laura Grimond,Unknown
    3 Ken Maginnis,Unknown
    3 Ken Loach,Unknown
-   3 Keir Starmer,Labour Party
+   3 Karen Bradley,Conservative Party
+   3 Jürgen Maier,Unknown
    3 June Sarpong,Unknown
+   3 Jon Ashworth,Labour Party
    3 John Thurso,Liberal Party
    3 John Silkin,Labour Party
    3 John O'Farrell (author),Unknown
+   3 John O'Dowd,Sinn Féin
    3 John Nicolson,Scottish National Party
    3 John McDonnell,Labour Party
    3 John Major,Conservative Party
    3 Joanna Cherry,Scottish National Party
    3 Jo Grimond,Unknown
    3 Jo Foley,Unknown
+   3 Jimmy Wales,Unknown
    3 Jim Sillars,Scottish National Party
    3 Jeremy Corbyn,Labour Party
-   3 Jeffrey Donaldson,Democratic Unionist Party
    3 Jeanette Winterson,Unknown
    3 Janet Anderson,Labour Party
    3 James Rubin,Democratic Party (United States)
    3 Hilary Wainwright,Unknown
    3 Hardeep Singh Kohli,Unknown
    3 Glenda Jackson,Labour Party
-   3 Gina Miller,Unknown
    3 Gillian Shephard,Conservative Party
    3 Gill Nott,Unknown
    3 Gerry Malone,Unknown
    3 George Pascoe-Watson,Unknown
    3 George Monbiot,Unknown
+   3 Geoff Norcott,Unknown
    3 Esther Rantzen,Unknown
    3 Esther McVey,Conservative Party
    3 Emily Macfarquhar,Unknown
@@ -538,6 +552,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Claire Fox,Unknown
    3 Claire Brooks,Unknown
    3 Christine Ockrent,Unknown
+   3 Chris Leslie,Labour Party
    3 Carwyn Jones,Labour Party
    3 Camila Batmanghelidjh,Unknown
    3 Brian Wilson (Labour politician),Unknown
@@ -550,6 +565,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 Barbara Roche,Labour Party
    3 Austin Mitchell,Labour Party
    3 Anthony Sampson,Unknown
+   3 Anneliese Dodds,Labour Party
    3 Anne Jones,Unknown
    3 Alistair Carmichael,Liberal Party
    3 Alice Thomson,Unknown
@@ -569,6 +585,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    3 "David Young, Baron Young of Graffham",Conservative Party
    3 "Brian Paddick, Baron Paddick",Liberal Party
    3 "Bill Morris, Baron Morris of Handsworth",Unknown
+   3 "Bill Jordan, Baron Jordan",Unknown
    3 "Barbara Wootton, Baroness Wootton of Abinger",Unknown
    3 "Alan Watson, Baron Watson of Richmond",Unknown
    2 Zoe Williams,Unknown
@@ -583,6 +600,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Vanessa Redgrave,Unknown
    2 Trevor Kavanagh,Unknown
    2 Tommy Sheridan,Solidarity (Scotland)
+   2 Tobias Ellwood,Conservative Party
    2 Timothy Raison,Conservative Party
    2 Tim Rice,Unknown
    2 Tim Melville-Ross,Unknown
@@ -591,14 +609,16 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Tanni Grey-Thompson,Unknown
    2 Suzanne Reeve,Unknown
    2 Susan Crosland,Unknown
-   2 Suella Braverman,Conservative Party
    2 Stuart Rose,Unknown
    2 Stuart Holland,Labour Party
    2 Steven Woolfe,Conservative Party
    2 Steve Coogan,Unknown
    2 Stephen Pollard,Unknown
+   2 Stephen Kinnock,Labour Party
    2 Stan Orme,Labour Party
+   2 Sonia Sodha,Unknown
    2 Simon Weston,Unknown
+   2 Simon Evans,Unknown
    2 Sidney Weighell,Unknown
    2 Shirley Porter,Unknown
    2 Shirley Goodwin,Unknown
@@ -610,12 +630,14 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Rosalind Miles,Unknown
    2 Robert McCartney (Northern Irish politician),UK Unionist Party
    2 Robert Maxwell,Labour Party
+   2 Richard Walker,Unknown
    2 Richard Needham,Conservative Party
    2 Richard Lambert,Unknown
    2 Richard Dannatt,Unknown
    2 Rhona Cameron,Unknown
    2 Rageh Omaar,Unknown
    2 Rachel Johnson,Unknown
+   2 Polly Mackenzie,Unknown
    2 Phil Redmond,Unknown
    2 Petronella Wyatt,Unknown
    2 Peter Ridsdale,Unknown
@@ -625,11 +647,11 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Peter Ainsworth,Conservative Party
    2 Peg Alexander,Unknown
    2 Paul Tyler,Liberal Party
+   2 Patrick Mayhew,Conservative Party
    2 Patricia Mann,Unknown
    2 P. D. James,Unknown
    2 Owen Paterson,Conservative Party
    2 Noreena Hertz,Unknown
-   2 Nish Kumar,Unknown
    2 Nigella Lawson,Unknown
    2 Nigel Evans,Conservative Party
    2 Nick Hewer,Unknown
@@ -644,15 +666,16 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Mitchel McLaughlin,Sinn Féin
    2 Minette Marrin,Unknown
    2 Mick Hucknall,Unknown
+   2 Michael Russell (politician),Scottish National Party
    2 Michael Moore,Unknown
    2 Michael Mates,Conservative Party
    2 Michael Mansfield,Unknown
    2 Michael Grade,Unknown
+   2 Miatta Fahnbulleh (economist),Unknown
    2 Max Mosley,Unknown
    2 Mary Holland,Unknown
    2 Martin Sorrell,Unknown
    2 Martha Lane Fox,Crossbencher
-   2 Mark Reckless,Independent
    2 Mark Harper,Conservative Party
    2 Marion Roe,Conservative Party
    2 Mariella Frostrup,Unknown
@@ -665,24 +688,23 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Lucy Powell,Labour Party
    2 Loyd Grossman,Unknown
    2 Lorna Fitzsimons,Labour Party
-   2 Liz Saville Roberts,Plaid Cymru
-   2 Lionel Shriver,Unknown
    2 Linda Smith (comedian),Unknown
    2 Linbert Spencer,Unknown
    2 Leo Pliatzky,Unknown
+   2 Layla Moran,Unknown
    2 Laurie Penny,Unknown
    2 Lauren Booth,Unknown
+   2 Laura Pidcock,Labour Party
    2 Laura Perrins,Unknown
    2 Lalage Bown,Unknown
    2 Kwame Kwei-Armah,Unknown
+   2 Kirsty Blackman,Scottish National Party
    2 Kim Howells,Labour Party
    2 Keith Vaz,Labour Party
    2 Kay Coleman,Unknown
    2 Katie Hopkins,Unknown
    2 Kat Fletcher,Labour Party
-   2 Karen Bradley,Conservative Party
    2 Kamlesh Bahl,Unknown
-   2 Jürgen Maier,Unknown
    2 Justin King (businessman),Unknown
    2 Julian Critchley,Unknown
    2 Judith Donovan,Unknown
@@ -691,10 +713,8 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Jonathan Freedland,Unknown
    2 Jonathan Bartley,Green Party
    2 Jonathan Aitken,Conservative Party
-   2 Jon Ashworth,Labour Party
    2 John Thorn (headmaster),Unknown
    2 John Pardoe,Liberal Party
-   2 John O'Dowd,Sinn Féin
    2 John Mortimer,Unknown
    2 John Monks,Labour Party
    2 John Mann (British politician),Labour Party
@@ -704,7 +724,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Joe Haines (journalist),Unknown
    2 Jock Bruce-Gardyne,Conservative Party
    2 Jo-Anne Nadler,Unknown
-   2 Jimmy Wales,Unknown
    2 Jim Murphy,Labour Party
    2 Jim Knight,Labour Party
    2 Jess Phillips,Labour Party
@@ -718,18 +737,18 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Janey Buchan,Unknown
    2 Janet Fookes,Conservative Party
    2 Jan Hall,Unknown
-   2 James Cleverly,Conservative Party
    2 James Anderton,Unknown
    2 Ivan Massow,Unknown
    2 Isobel Lindsay,Unknown
    2 Irvine Welsh,Unknown
    2 Ian McCartney,Labour Party
    2 Ian Lavery,Labour Party
-   2 Ian Blackford,Scottish National Party
    2 Ian Aitken (journalist),Unknown
+   2 Hugo Rifkind,Unknown
    2 Henry McLeish,Labour Party
    2 Heather Rabbatts,Unknown
    2 Harry Enfield,Unknown
+   2 Hannah Bardell,Scottish National Party
    2 Hamza Yusuf,Unknown
    2 Griff Rhys Jones,Unknown
    2 Graham Leonard,Unknown
@@ -739,13 +758,14 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 George the Poet,Unknown
    2 George Wright,Unknown
    2 Geoffrey Pattie,Conservative Party
-   2 Geoff Norcott,Unknown
    2 Frederic Raphael,Unknown
    2 Francis Wheen,Unknown
    2 Frances Edmonds,Unknown
+   2 Fiona Hyslop,Scottish National Party
    2 Fern Britton,Unknown
    2 Faiza Shaheen,Unknown
    2 Eric Varley,Labour Party
+   2 Ella Whelan,Unknown
    2 Elizabeth Sidney,Unknown
    2 Elizabeth Rees-Williams,Unknown
    2 Eldon Griffiths,Conservative Party
@@ -753,6 +773,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Ed Koch,Democratic Party (United States)
    2 Duncan Bannatyne,Unknown
    2 Dreda Say Mitchell,Unknown
+   2 Dr Sheila Lawlor,Unknown
    2 Douglas Hogg,Conservative Party
    2 Dominic Grieve,Conservative Party
    2 Des Browne,Labour Party
@@ -760,6 +781,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Derek Hatton,Labour Party
    2 Decca Aitkenhead,Unknown
    2 Deborah Meaden,Unknown
+   2 David Puttnam,Unknown
    2 David Mundell,Unknown
    2 David McLetchie,Conservative Party
    2 David Marquand,Plaid Cymru
@@ -768,11 +790,11 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 David Frum,Unknown
    2 David Evans (British politician),Unknown
    2 Darcus Howe,Unknown
+   2 Damian Hinds,Conservative Party
    2 Dafydd Elis-Thomas,Independent
    2 Conrad Black,Unknown
    2 Colleen Graffy,Unknown
    2 Clive Sinclair,Unknown
-   2 Clive Lewis (politician),Labour Party
    2 Clive Jenkins,Unknown
    2 Clement Freud,Liberal Party
    2 Clarke Carlisle,Unknown
@@ -782,7 +804,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Christine Blower,Unknown
    2 Chris Woodhead,Unknown
    2 Chris Mullin (politician),Labour Party
-   2 Chris Leslie,Labour Party
    2 Charlotte Church,Unknown
    2 Cathy Jamieson,Labour Party
    2 Camilla Long,Unknown
@@ -800,12 +821,14 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Barbara Switzer,Unknown
    2 Barbara Amiel,Unknown
    2 Ayesha Hazarika,Unknown
+   2 Ash Sarkar,Unknown
    2 Archie Norman,Conservative Party
    2 Antony Worrall Thompson,Unknown
    2 Anthony Horowitz,Unknown
    2 Anne Robinson,Unknown
    2 Anne Minto,Unknown
    2 Anna Coote,Unknown
+   2 Andy McDonald (politician),Unknown
    2 Andrew Smith (British politician),Labour Party
    2 Andrew Rawnsley,Unknown
    2 Andrew Pierce,Unknown
@@ -813,6 +836,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 Amol Rajan,Unknown
    2 Amalgamated Engineering and Electrical Union,Unknown
    2 Alistair Graham,Unknown
+   2 Alison Phillips,Unknown
    2 Alan Watkins,Unknown
    2 Alain de Botton,Unknown
    2 Aditya Chakrabortty,Unknown
@@ -835,15 +859,16 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    2 "Elspeth Howe, Baroness Howe of Idlicote",Unknown
    2 "Diana Warwick, Baroness Warwick of Undercliffe",Unknown
    2 "Bob Maclennan, Baron Maclennan of Rogart",Labour Party
-   2 "Bill Jordan, Baron Jordan",Unknown
    2 "Bernard Hogan-Howe, Baron Hogan-Howe",Unknown
    2 "Alun Gwynne Jones, Baron Chalfont",Unknown
    1 Zerbanoo Gifford,Unknown
    1 Yvonne Thompson,Unknown
+   1 Yvonne Barton,Unknown
    1 Yvette Roudy,Unknown
    1 Yve Newbold,Unknown
    1 Woodrow Wyatt,Unknown
    1 Winston Churchill (1940–2010),Conservative Party
+   1 William Waldegrave and Jack Straw,Unknown
    1 William Atkinson (teacher),Unknown
    1 Wendy Mantle,Unknown
    1 Wendy Hogg,Unknown
@@ -853,6 +878,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Vin Weber,Republican Party (United States)
    1 Victoria Toensing,Unknown
    1 Victoria Barnsley,Unknown
+   1 Victoria Atkins,Unknown
    1 Vicky Pryce,Unknown
    1 Vernon Coaker,Labour Party
    1 Vera Baird,Labour Party
@@ -860,6 +886,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Valerie Wise,Unknown
    1 Una Kroll,Unknown
    1 Trisha Goddard,Unknown
+   1 Tracy Brabin,Unknown
    1 Tracey Emin,Unknown
    1 Tony Wilson,Unknown
    1 Tony Parsons (British journalist),Unknown
@@ -867,7 +894,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Tom Tugendhat,Conservative Party
    1 Tom Hunter,Unknown
    1 Tom Conti,Unknown
-   1 Tobias Ellwood,Conservative Party
    1 Tina Knight,Unknown
    1 Tim Waterstone,Unknown
    1 Tim Spicer,Unknown
@@ -895,13 +921,13 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Stig Abell,Unknown
    1 Stewart McDonald (politician),Scottish National Party
    1 Stewart Hosie,Scottish National Party
+   1 Steven Pinker,Unknown
    1 Steve Richards,Unknown
    1 Steve Hilton,Unknown
    1 Steve Easterbrook,Unknown
    1 Steve Cram,Unknown
    1 Stephen Tumim,Unknown
    1 Stephen Lowe (bishop of Hulme),Unknown
-   1 Stephen Kinnock,Labour Party
    1 Stephen Green,Unknown
    1 Stephen Gethins,Scottish National Party
    1 Stephen Fry,Unknown
@@ -911,12 +937,12 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Siân Berry,Green Party
    1 Simon Woodroffe,Unknown
    1 Simon Sebag Montefiore,Unknown
+   1 Simon Jordan,Unknown
    1 Simon JenkinsMichael Howard,Unknown
    1 Simon Hornby,Unknown
    1 Simon Hart,Conservative Party
    1 Simon Hamilton,Democratic Unionist Party
    1 Simon Fanshawe,Unknown
-   1 Simon Evans,Unknown
    1 Simon Callow,Unknown
    1 Simon Burns,Conservative Party
    1 Sidney Blumenthal,Democratic Party (United States)
@@ -931,6 +957,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Shailesh Vara,Conservative Party
    1 Shahid Malik,Labour Party
    1 Shabana Mahmood,Labour Party
+   1 Sebastian Payne,Unknown
    1 Sebastian Coe,Conservative Party
    1 Seamus Mallon,Social Democratic and Labour Party
    1 Scott Hastings (rugby union),Unknown
@@ -953,6 +980,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Roy Shaw (arts administrator),Unknown
    1 Roy Close,Unknown
    1 Rowan Pelling,Unknown
+   1 Ross Thomson,Conservative Party
    1 Rosie Millard,Unknown
    1 Rosemary Righter,Unknown
    1 Ronald Dworkin,Unknown
@@ -976,14 +1004,15 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Rob Delaney,Unknown
    1 Ricky Ross (musician),Unknown
    1 Rick Stein,Unknown
-   1 Richard Walker,Unknown
    1 Richard Rogers,Unknown
    1 Richard Reed,Unknown
    1 Richard Perle,Republican Party (United States)
+   1 Richard Leonard (Scottish politician),Unknown
    1 Richard Dreyfuss,Unknown
    1 Richard Coles,Unknown
    1 Richard Bacon (broadcaster),Unknown
    1 Rhun ap Iorwerth,Plaid Cymru
+   1 Rhiannon Chapman,Unknown
    1 Reginald Victor Jones,Unknown
    1 Reg Prentice,Conservative Party
    1 Rebecca Hardy,Unknown
@@ -997,7 +1026,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Radzi Chinyanganya,Unknown
    1 Rachel Sylvester,Unknown
    1 Rachel Billington,Unknown
-   1 Polly Mackenzie,Unknown
    1 Pik Botha,National Party (South Africa)
    1 Pierre-Yves Gerbeau,Unknown
    1 Philip Lader,Democratic Party (United States)
@@ -1034,6 +1062,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Patsy Calton,Liberal Party
    1 Patrick Moore,Unknown
    1 Patrick Meaney,Unknown
+   1 Patrick Mayhew,Unknown
    1 Patience Purchas,Unknown
    1 Pat Doherty,Sinn Féin
    1 Pam Charlwood,Unknown
@@ -1047,11 +1076,13 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Norman Stone,Unknown
    1 Norman Pace,Unknown
    1 Norman Jay,Unknown
+   1 Nirj Deva,Unknown
    1 Nina Temple,Communist Party of Great Britain
    1 Nikki King,Unknown
    1 Nigel Havers,Unknown
    1 Nigel Broackes,Unknown
    1 Nicky Harrison,Unknown
+   1 Nick Thomas-Symonds,Unknown
    1 Nick Scott,Unknown
    1 Nick Raynsford,Labour Party
    1 Nick Herbert,Conservative Party
@@ -1078,13 +1109,13 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Monica Grady,Unknown
    1 Moira Constable,Unknown
    1 Moeletsi Mbeki,Unknown
+   1 Mo Mowlam,Unknown
    1 Miriam Karlin,Unknown
    1 Miranda Sawyer,Unknown
    1 Mike Thomas (politician),Labour Party
    1 Mike Hancock (British politician),Independent
    1 Michael White (journalist),Unknown
    1 Michael Spicer,Conservative Party
-   1 Michael Russell (politician),Scottish National Party
    1 Michael R. Angus,Unknown
    1 Michael O'Leary (businessman),Unknown
    1 Michael Mander,Unknown
@@ -1094,9 +1125,10 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Michael Cashman,Labour Party
    1 Michael Carver,Unknown
    1 Michael Bloomberg,Democratic Party (United States)
-   1 Miatta Fahnbulleh (economist),Unknown
    1 Melvyn Bragg,Unknown
    1 Melissa Kite,Unknown
+   1 Mel Stride,Unknown
+   1 Mel Read,Unknown
    1 Max Clifford,Unknown
    1 Max Beloff,Unknown
    1 Mavis Nicholson,Unknown
@@ -1132,7 +1164,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Mandy Telford,Unknown
    1 Mandi Norwood,Unknown
    1 Malcolm McLaren,Unknown
-   1 Mairead McGuinness,Unknown
    1 Magnus Linklater,Unknown
    1 Maggie Chapman,Green Party
    1 Lynn Collins,Unknown
@@ -1157,13 +1188,11 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Leonard Downie Jr.,Unknown
    1 Leanda de Lisle,Unknown
    1 Laurence Martin,Unknown
-   1 Laura Pidcock,Labour Party
    1 Laura Anne Jones,Conservative Party
    1 Lance Price,Unknown
    1 Lady Olga Maitland,Conservative Party
    1 Kurt Schmoke,Democratic Party (United States)
    1 Kristen Lippincott,Unknown
-   1 Kirsty Blackman,Scottish National Party
    1 Kina Avebury,Unknown
    1 Kevin Maguire (journalist),Unknown
    1 Kerry-Anne Mendoza,Unknown
@@ -1198,6 +1227,8 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Judi Clements,Unknown
    1 Joyce McMillan,Unknown
    1 Josephine Hart,Unknown
+   1 Jordan Peterson,Unknown
+   1 Jonathan Reynolds,Unknown
    1 Jonathan Lynn,Unknown
    1 Jonathan Edwards (triple jumper),Unknown
    1 Jon Gaunt.,Unknown
@@ -1207,15 +1238,19 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 John Wakeham,Conservative Party
    1 John Timpson (businessman),Unknown
    1 John Stalker,Unknown
+   1 John Smith and Alan Beith,Unknown
    1 John Sessions,Unknown
+   1 John Rhys-Davies,Unknown
    1 John Rentoul,Unknown
    1 John Rae (educator),Unknown
    1 John R. Bolton,Republican Party (United States)
    1 John Pilger,Unknown
+   1 John Mills (businessman),Unknown
    1 John McCririck,Unknown
    1 John Lydon,Unknown
    1 John Lloyd,Unknown
    1 John Hoskyns,Unknown
+   1 John Healey (politician),Unknown
    1 John Gunnell,Labour Party
    1 John Grugeon,Unknown
    1 John Gale (theatre producer),Unknown
@@ -1227,6 +1262,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 John Butcher (British politician),Unknown
    1 John Burgh (civil servant),Unknown
    1 John Biggs-Davison,Unknown
+   1 John Barnes (footballer),Unknown
    1 Johann Lamont,Labour Party
    1 Johann Hari,Unknown
    1 Johan Eliasch,Unknown
@@ -1247,11 +1283,13 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Jim Davidson,Unknown
    1 Jim Allister,Traditional Unionist Voice
    1 Jilly Cooper,Unknown
+   1 Jill Rutter,Unknown
    1 Jill Knight,Conservative Party
    1 Jill Craigie,Unknown
    1 Jessica Mann,Unknown
    1 Jerry Hayes,Conservative Party
    1 Jermaine Jenas,Unknown
+   1 Jeremy Wright,Unknown
    1 Jeremy Isaacs,Unknown
    1 Jeremy Hanley,Conservative Party
    1 Jeremy Greenstock,Unknown
@@ -1259,6 +1297,8 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Jenny Willott,Liberal Party
    1 Jenny Marra,Labour Party
    1 Jenny Kirkpatrick,Unknown
+   1 Jenny Chapman,Unknown
+   1 Jennifer d'Abo,Unknown
    1 Jennifer Robinson (lawyer),Unknown
    1 Jeff Rooker,Unknown
    1 Jeff Randall,Unknown
@@ -1266,6 +1306,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Jeane Kirkpatrick,Socialist Party of America
    1 Jeane Freeman,Scottish National Party
    1 Jay Rayner,Unknown
+   1 Javed Khan (executive),Unknown
    1 Jarvis Cocker,Unknown
    1 Janine di Giovanni,Unknown
    1 Janet Ryder,Plaid Cymru
@@ -1290,6 +1331,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 James Callaghan,Labour Party
    1 James Caan,Unknown
    1 James Caan (entrepreneur),Unknown
+   1 James Brokenshire,Unknown
    1 Jacqui Lait,Conservative Party
    1 Jacques Santer,Unknown
    1 Jacques Myard,The Republicans (France)
@@ -1310,11 +1352,12 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Ian Gilmore,Unknown
    1 Ian Crowther,Unknown
    1 Ian Blair,Unknown
+   1 Iain Martin,Unknown
    1 Iain Gray,Labour Party
    1 Iain Dale,Unknown
    1 Iain Banks,Unknown
+   1 Iain Anderson,Unknown
    1 Hywel Williams,Plaid Cymru
-   1 Hugo Rifkind,Unknown
    1 Hugh Montefiore,Unknown
    1 Hugh Hendry,Unknown
    1 Hugh Grant,Unknown
@@ -1322,6 +1365,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Hugh Dykes,Unknown
    1 Hugh Clegg (industrial relations expert),Unknown
    1 Huey Morgan,Unknown
+   1 Holger K. Nielsen,Unknown
    1 Hilary Williams,Unknown
    1 Hilary Devey,Unknown
    1 Hilary Campbell,Unknown
@@ -1330,13 +1374,14 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Henry E. Catto,Unknown
    1 Henry Bolton (British politician),Unknown
    1 Henry Blofeld,Unknown
+   1 Henning Wehn,Unknown
+   1 Helen Whately,Unknown
    1 Helen Lewis (journalist),Unknown
    1 Heather Mills,Unknown
    1 Hartley Booth,Unknown
    1 Harriet Sergeant,Unknown
    1 Harriet Crawley,Unknown
    1 Harold McCusker,Ulster Unionist Party
-   1 Hannah Bardell,Scottish National Party
    1 Gyles Brandreth,Conservative Party
    1 Gwynneth Flower,Unknown
    1 Gus Macdonald,Labour Party
@@ -1344,11 +1389,13 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Gráinne Maguire,Unknown
    1 Grigory Karasin,Unknown
    1 Grayson Perry,Unknown
+   1 Grace Blakeley,Unknown
    1 Gordon Wilson (Scottish politician),Scottish National Party
    1 Gisela Stuart,Labour Party
    1 Gillian duCharme,Unknown
    1 Gillian Tett,Unknown
    1 Gillian Peele,Unknown
+   1 Giles Watling,Unknown
    1 Giles Radice,Labour Party
    1 Ghada Karmi,Unknown
    1 Gerry Robinson,Unknown
@@ -1366,9 +1413,9 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Gaia Servadio,Unknown
    1 Frederick Lawton (judge),Unknown
    1 Frank Skinner,Unknown
+   1 Francesca Martinez,Unknown
    1 Frances Crook,Unknown
    1 Fiona Phillips,Unknown
-   1 Fiona Hyslop,Scottish National Party
    1 Fiona Gilmore,Unknown
    1 Fiona Driscoll,Unknown
    1 Fay Weldon,Unknown
@@ -1377,6 +1424,8 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Evan Harris,Liberal Party
    1 Eva Pascoe,Unknown
    1 Eusebius McKaiser,Unknown
+   1 Eunice Olumide,Unknown
+   1 Esther Leneman,Unknown
    1 Eric Morley,Unknown
    1 Enid Ralphs,Unknown
    1 Emma Soames,Unknown
@@ -1384,7 +1433,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Emma Inglis,Unknown
    1 Emma Boon,Unknown
    1 Emeka Anyaoku,Unknown
-   1 Ella Whelan,Unknown
    1 Elizabeth Shields,Liberal Party
    1 Elizabeth Meehan,Unknown
    1 Elizabeth Edwards,Unknown
@@ -1393,6 +1441,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Elin Jones,Plaid Cymru
    1 Elaine Foster,Unknown
    1 Elaine C. Smith,Unknown
+   1 Eilidh Douglas,Unknown
    1 Edward Roberts,Unknown
    1 Edward Pearce (journalist),Unknown
    1 Edward Gardner (British politician),Unknown
@@ -1404,7 +1453,10 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Ed Byrne (comedian),Unknown
    1 Dustin Lance Black,Unknown
    1 Drew Middleton,Unknown
-   1 Dr Sheila Lawlor,Unknown
+   1 Drew Hendry,Unknown
+   1 Dr Marie Stewart,Unknown
+   1 Dr Elizabeth Nelson,Unknown
+   1 Dr Ann Robinson,Unknown
    1 Dorothy Grace-Jones,Unknown
    1 Donny O'Rourke,Unknown
    1 Donald Stewart (Scottish politician),Scottish National Party
@@ -1433,8 +1485,8 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 David Young,Unknown
    1 David Yelland (journalist),Unknown
    1 David Tang,Unknown
+   1 David Steel,Unknown
    1 David Rendel,Liberal Party
-   1 David Puttnam,Unknown
    1 David Napley,Unknown
    1 David Montgomery (newspaper executive),Unknown
    1 David Montgomery (historian),Unknown
@@ -1449,8 +1501,8 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Daphne Park,Unknown
    1 Daniel Finkelstein,Unknown
    1 Dan Snow,Unknown
-   1 Damian Hinds,Conservative Party
    1 Dambisa Moyo,Unknown
+   1 Cyril Smith,Unknown
    1 Craig Oliver (British journalist),Unknown
    1 Constance Briscoe,Unknown
    1 Conor Murphy,Sinn Féin
@@ -1468,6 +1520,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Christopher Frayling,Unknown
    1 Christopher Chataway,Conservative Party
    1 Christine Laird,Unknown
+   1 Christine Jardine,Unknown
    1 Christine Hancock,Unknown
    1 Christina Lyon,Unknown
    1 Christina Gorna,Unknown
@@ -1485,6 +1538,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Charlie Mullins,Unknown
    1 Charlie Bell,Unknown
    1 Charles Pollard,Unknown
+   1 Catherine Barnard,Unknown
    1 Catherine Ashton,Labour Party
    1 Cat Smith,Labour Party
    1 Cat Boyd,Unknown
@@ -1498,6 +1552,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Carmen Callil,Unknown
    1 Carl Chinn,Unknown
    1 Campaign for Nuclear Disarmament,Unknown
+   1 Bryan Gould and Matthew Taylor,Unknown
    1 Bryan Ferry,Unknown
    1 Bronagh Hinds,Unknown
    1 Bridget Ogilvie,Unknown
@@ -1514,6 +1569,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Bob Mellish,Liberal Party
    1 Bob Kiley,Unknown
    1 Bob Hawke,Australian Labor Party
+   1 Bim Afolami,Unknown
    1 Bill Sirs,Unknown
    1 Bill Rammell,Labour Party
    1 Bill Mackenzie,Unknown
@@ -1535,7 +1591,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Barbara Follett (politician),Labour Party
    1 Audrey Slaughter,Unknown
    1 Auberon Waugh,Unknown
-   1 Ash Sarkar,Unknown
    1 Asa Briggs,Unknown
    1 Art Malik,Unknown
    1 Arron Banks,Unknown
@@ -1545,7 +1600,6 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Anthony Parsons,Unknown
    1 Anthony Frodsham,Unknown
    1 Annie Stewart,Unknown
-   1 Anneliese Dodds,Labour Party
    1 Anne Wright,Unknown
    1 Anne McGuire,Labour Party
    1 Anne Kelleher,Unknown
@@ -1567,15 +1621,18 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 Andrew Knight (journalist),Unknown
    1 Andrew Hunter (British politician),Democratic Unionist Party
    1 Andrew Foster (British public servant),Unknown
+   1 Andrea Jenkyns,Unknown
    1 Andile Mngxitama,Unknown
    1 Anas Sarwar,Labour Party
+   1 Anand Menon,Unknown
    1 Amanda Foreman (historian),Unknown
    1 Alun Cairns,Conservative Party
    1 Alistair Burt,Conservative Party
-   1 Alison Phillips,Unknown
    1 Alison Carnwath,Unknown
    1 Alice Miles,Unknown
+   1 Alf Gordon,Unknown
    1 Alexei Sayle,Unknown
+   1 Alexandra Phillips (Brexit Party politician),Unknown
    1 Alex Neil (politician),Labour Party
    1 Alex Massie (journalist),Unknown
    1 Alex Jarratt,Unknown
@@ -1643,11 +1700,13 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 "Janet Royall, Baroness Royall of Blaisdon",Labour Party
    1 "Jane Ewart-Biggs, Baroness Ewart-Biggs",Labour Party
    1 "Jane Bonham Carter, Baroness Bonham-Carter of Yarnbury",Unknown
+   1 "Inga-Stina Robson, Baroness Robson of Kiddington",Unknown
    1 "Haleh Afshar, Baroness Afshar",Unknown
    1 "George Thomas, 1st Viscount Tonypandy",Labour Party
    1 "George Foulkes, Baron Foulkes of Cumnock",Labour Party
    1 "George Brown, Baron George-Brown",Labour Party
    1 "Frank Judd, Baron Judd",Labour Party
+   1 "Emily Blatch, Baroness Blatch",Unknown
    1 "Edward Shackleton, Baron Shackleton",Unknown
    1 "Donald Stokes, Baron Stokes",Unknown
    1 "Donald Anderson, Baron Anderson of Swansea",Labour Party
@@ -1658,6 +1717,7 @@ $ csvcut -K 1 -c 4,6 appearances.csv | sort | uniq -c | sort -nr
    1 "David Clark, Baron Clark of Windermere",Labour Party
    1 "Christopher Tugendhat, Baron Tugendhat",Unknown
    1 "Christine Crawley, Baroness Crawley",Labour Party
+   1 "Charles Powell, Baron Powell of Bayswater",Unknown
    1 "Charles Powell, Baron Powell of Bayswater",Crossbench
    1 "Catherine Meyer, Baroness Meyer",Unknown
    1 "Beryl Platt, Baroness Platt of Writtle",Unknown

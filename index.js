@@ -14,7 +14,8 @@ const yargs = require(`yargs`);
 // Use local cache to get list of episodes (default: `false`).
 // If `true` will use EPISODES_FILE to get cached episode and guest list.
 // If `false` will use EPISODES_URL to get latest episode and guest list.
-// Useful to set to `true` for offline development.
+// Useful to set to `true` for offline development and to provide a
+// reference when debugging new issues.
 const USE_EPISODE_CACHE = false; 
 
 // Use local entity cache (default: `true`).
@@ -22,14 +23,15 @@ const USE_EPISODE_CACHE = false;
 // only if entity data does not exist in the cache. New data will be saved to
 // the local cache to make subsequent executions quicker.
 // If `false` will not read or write to the local cache and will only cache in
-// memory (which is flushed when the script finished excuting).
+// memory (which is flushed when the script finished executing).
 const USE_ENTITY_CACHE = true;
+const ENTITY_CACHE_FILE = `${__dirname}/wikipedia-entities.json`;
 
-// Use local overrides for Wikpedia data (default: `true`).
+// Use local overrides for Wikipedia data (default: `true`).
 //
 // This file contains data we can use to override information stored in 
-// Wikipedia because it is incomplete, inaccruate or because the script is not
-// yet able to handle how to interperate the data stored in Wikiepdia.
+// Wikipedia because it is incomplete, inaccurate or because the script is not
+// yet able to handle how to interpret the data stored in Wikipedia.
 //
 // This includes cases such as people have been members of more than one 
 // political party or who have resigned. There will always be exceptions and 
@@ -39,84 +41,95 @@ const USE_ENTITY_CACHE = true;
 // Examples:
 //
 // * Alex Salmond has resigned from the Scottish National Party in 2018 but 
-//   appeared as a promiment member of the party. Although he is no longer a
+//   appeared as a prominent member of the party. Although he is no longer a
 //   member of the party he is counted as being a member of the SNP as he was
 //   at the time when he appeared on the show.
 //
 // * Menzies Campbell was previously a member of the Liberal until 1998, when 
 //   the Liberal Party merged with the SDP to become the Liberal Democrats
 //   (when he has been a member of ever since). The script is not yet able to
-//   handle Wikiepdia data for this case correctly so we use the overide the 
+//   handle Wikipedia data for this case correctly so we use the override the 
 //   data ensure we use the most appropriate and up to date affiliation.
 //
-// Cases that require editorial judgement including the affilations of guests
-// who are not politicans will not be tracked using this field. An additional
+// Cases that require editorial judgement including the affiliations of guests
+// who are not politicians will not be tracked using this field. An additional
 // political alignment metric would be more suitable and may abe added in 
 // future. Edge cases (such as guests who have switched party between 
 // appearances are not currently supported.
 //
 // This is a hack, but it's pragmatic.
 const USE_ENTITY_PATCH = true;
-
-const EPISODES_URL = 'https://en.wikipedia.org/wiki/List_of_Question_Time_episodes';
-const EPISODES_FILE = `${__dirname}/List of Question Time episodes - Wikipedia.html`;
-const ENTITY_CACHE_FILE = `${__dirname}/wikipedia-entities.json`;
 const ENTITY_PATCH_FILE = `${__dirname}/wikipedia-patch.json`;
 
+const EPISODES_URL = 'https://en.wikipedia.org/wiki/List_of_Question_Time_episodes';
+const EPISODES_FILE = `${__dirname}/List_of_Question_Time_episodes`;
+
 /*** End Configuration ***/
-    
+
 async function getAppearances() {
   // Cache responses from DBpedia in memory
   let wikipediaEntities = {};
-  
+  let entityPatch = {};
+
+  // Caching entity info speeds things up and avoids hitting rate limits doing lookups
   if (USE_ENTITY_CACHE === true && fs.existsSync(ENTITY_CACHE_FILE)) {
     wikipediaEntities = JSON.parse(fs.readFileSync(ENTITY_CACHE_FILE, 'utf8')) || {};
   }
   
-  // Entity data can be overriden by values patch file
-  const entityPatchFile = JSON.parse(fs.readFileSync(ENTITY_PATCH_FILE, 'utf8')) || {};
+  // Entity data can be overridden by values patch file
+  // This helps work around edge cases (such as where party membership is complicated)
+  if (USE_ENTITY_PATCH === true && fs.existsSync(ENTITY_PATCH_FILE)) {
+    entityPatch = JSON.parse(fs.readFileSync(ENTITY_PATCH_FILE, 'utf8')) || {};
+  }
   
   let json = await getEpisodeListJson();
   
-  let isFirstRow = true
+  let isFirstRow = true;
   
   // We use 'for' instead of 'forEach' as we WANT to be blocking as it's the
   // easiest way to avoid hitting rate limits fetching data from DBpedia.
   // The downside is the script takes 30-60 seconds or so to run.
   for (const table of json) {
     for (const row of table) {
-      // Only parse tables that have a '#' indicating they are about an episode
+      // Only parse tables have all the columns we are looking for
       if (row['#']) {
-        let $
+        let $;
         
         // Note: `.replace(/\[.*\]/, '').trim()` is used below to clean up
-        // wikimarkup with pointers to footnotes.
+        // wiki markup with pointers to footnotes.
         
         // Fields sometimes contain HTML so we use Cheerio to parse them
-        $ = cheerio.load(row.Location);
-        const EpisodeLocation = $.text().replace(/\[.*\]/, '').trim();
+        let episodeLocation = '';
+        if (row.Location) {
+          $ = cheerio.load(row.Location);
+          episodeLocation = $.text().replace(/\[.*\]/, '').trim();
+        }
         
-        $ = cheerio.load(row.Airdate);
-        const date = Date.parse($.text().replace(/\[.*\]/, '').trim());
-        const EpisodeDate = moment(date).format('YYYY-MM-DD');
+        let episodeDate = ''
+        if (row.Airdate) {
+          $ = cheerio.load(row.Airdate);
+          const date = Date.parse($.text().replace(/\[.*\]/, '').trim());
+          episodeDate = moment(date).format('YYYY-MM-DD');
+        }
         
-        $ = cheerio.load(row.Panellists);
-        const panellists = $.text().split(',');
+        let panellists = [];
+        if (row.Panellists) {
+          $ = cheerio.load(row.Panellists);
+          panellists = $.text().split(',');
+        }
         
         for (const panellist of panellists) {
-
-          let title = panellist.replace(/\[.*\]/, '').trim();
+          let title = panellist.replace(/\[.*?\]/g, '').trim();
           let url = null;
           let party = null;
-          let partyUrl = null;
-          
+
           // Some panelists also have links to their Wikipedia page.
           // Not all do though, so we do something a bit odd here to get the URL
           // in a way that doesn't fail if they don't have one. This would 
           // return an incorrect URL if two panellists on the same episode had 
           // the same name, but that hasn't happend YET.
           $('a').each(function(i, elem) {
-            if (title === $(this).text().replace(/\[.*\]/, '').trim())
+            if (title === $(this).text().replace(/\[.*?\]/g, '').trim())
               url = $(this).attr('href');
           });
           
@@ -172,20 +185,20 @@ async function getAppearances() {
             // Override data from Wikipedia if we have our own data.
             // Note: This flow still updates the Entity Cache if enabled, we
             // are just overriding the output.
-            if (entityPatchFile[entityName]) {
-              if (entityPatchFile[entityName].title) {
-                title = entityPatchFile[entityName].title
+            if (USE_ENTITY_PATCH === true && entityPatch[entityName]) {
+              if (entityPatch[entityName].title) {
+                title = entityPatch[entityName].title
               }
-              if (entityPatchFile[entityName].party) {
-                party = entityPatchFile[entityName].party
+              if (entityPatch[entityName].party) {
+                party = entityPatch[entityName].party
               }
             }
           }
           
-          const apperance = {
+          const appearance = {
             Episode: Number(row['#']) || 0,
-            Date: EpisodeDate,
-            Location: EpisodeLocation,
+            Date: episodeDate,
+            Location: episodeLocation,
             Guest: decodeURIComponent(title),
             GuestUrl: (url) ? url.replace(/^\/wiki\//, 'https://en.wikipedia.org/wiki/') : '',
             Party: getNormalizedPartyName(party),
@@ -198,12 +211,11 @@ async function getAppearances() {
             // Only print column headings on first row
             if (isFirstRow === true) {
               isFirstRow = false;
-              console.log(json2csv(apperance));
+              console.log(json2csv(appearance));
             } else {
-              console.log(json2csv(apperance, { header: false }));
+              console.log(json2csv(appearance, { header: false }));
             }
           }
-          
         }
       }
     }
@@ -241,12 +253,12 @@ function getNormalizedPartyName(partyEntityName) {
   ];
   
   // The Labour and Co-operative Party is a special case, it is more than just 
-  // an affiliated party.
+  // an affiliated party. 'Labour_Party_(Ireland)' is not included in this list.
   const labour = [
     'Labour_Party_(UK)',
+    'Labour_and_Co-operative',
     'Scottish_Labour_Party',
-    'Welsh_Labour',
-    'Labour_and_Co-operative'
+    'Welsh_Labour'
   ];
   
   // Social Democratic Party & Liberal Party merged as Liberal Democrats in 1998
@@ -264,9 +276,11 @@ function getNormalizedPartyName(partyEntityName) {
     'Scottish_Green_Party',
   ];
 
-  const independant = [
+  const independent = [
     'Independent_politician',
-    'Independent_(politics)'
+    'Independent_(politics)',
+    'Crossbench',
+    'Crossbencher'
   ];
   
   if (conservatives.includes(partyEntityName)) {
@@ -277,7 +291,7 @@ function getNormalizedPartyName(partyEntityName) {
     return "Liberal Party";
   } else if (greens.includes(partyEntityName)) {
     return "Green Party";
-  } else if (independant.includes(partyEntityName)) {
+  } else if (independent.includes(partyEntityName)) {
     return "Independent";
   } else {
     return decodeURIComponent(partyEntityName).replace(/_/g, ' ');
